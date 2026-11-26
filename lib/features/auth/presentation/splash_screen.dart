@@ -50,7 +50,10 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
             bottom: size.height * 0.42,
             child: Center(
               child: Image.asset('assets/images/logo.png',
-                  width: size.width * 0.72, fit: BoxFit.contain),
+                  width: size.width * 0.72,
+                  color: AppColors.canvas,
+                  colorBlendMode: BlendMode.multiply,
+                  fit: BoxFit.contain),
             ),
           ),
           // Green curved bottom

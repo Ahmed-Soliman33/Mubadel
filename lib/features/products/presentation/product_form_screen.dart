@@ -348,18 +348,17 @@ class _ProductFormScreenState extends ConsumerState<ProductFormScreen> {
                 Text(l.productCondition,
                     style: AppText.captionMuted.copyWith(fontSize: 13)),
                 const SizedBox(height: 8),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 10,
+                  runSpacing: 8,
                   children: [
-                    for (final c in ProductCondition.values) ...[
+                    for (final c in ProductCondition.values)
                       _Chip(
                         label: l.condition(c),
                         selected: _condition == c,
                         onTap: () => setState(() => _condition = c),
                       ),
-                      if (c != ProductCondition.used)
-                        const SizedBox(width: 10),
-                    ],
                   ],
                 ),
                 const SizedBox(height: 22),

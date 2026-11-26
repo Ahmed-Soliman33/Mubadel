@@ -68,10 +68,13 @@ class PageHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // The design keeps the back button on the physical left (end side in
+    // RTL, start side in LTR) so it sits at the same corner in both locales.
+    final backAtStart = !context.isRtl && onBack != null && trailing == null;
     Widget? end = trailing;
-    if (end == null && onBack != null) {
+    if (end == null && onBack != null && !backAtStart) {
       end = BackChevron(onTap: onBack!);
-    } else if (end == null && showLogo) {
+    } else if (end == null && onBack == null && showLogo) {
       end = const LogoBox();
     }
     return Padding(
@@ -80,6 +83,7 @@ class PageHeader extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (backAtStart) ...[BackChevron(onTap: onBack!), const SizedBox(width: 8)],
           Expanded(
             child: Padding(
               padding: const EdgeInsets.only(top: 4),

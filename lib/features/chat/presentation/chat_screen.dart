@@ -34,6 +34,7 @@ class ChatScreen extends ConsumerStatefulWidget {
 
 class _ChatScreenState extends ConsumerState<ChatScreen> {
   final _input = TextEditingController();
+  late final ProviderContainer _container;
   bool _sending = false;
 
   String get id => widget.conversationId;
@@ -41,6 +42,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   @override
   void initState() {
     super.initState();
+    _container = ProviderScope.containerOf(context, listen: false);
     _markRead();
   }
 
@@ -48,7 +50,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   void dispose() {
     _input.dispose();
     // Clear the unread badge when leaving.
-    ref.invalidate(unreadCountsProvider);
+    _container.invalidate(unreadCountsProvider);
     super.dispose();
   }
 
@@ -251,45 +253,46 @@ class _Header extends StatelessWidget {
   final Widget menu;
 
   @override
-  Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(8, 10, 8, 10),
-        child: Row(
+  Widget build(BuildContext context) {
+    // RTL order (start→end): menu, call, name, avatar, back. In LTR the back
+    // button stays on the physical left, so the list is simply reversed.
+    final children = <Widget>[
+      menu,
+      if (showCall)
+        IconButton(
+          onPressed: onCall,
+          tooltip: context.l10n.callPeer,
+          icon: const Icon(Icons.phone_outlined, color: AppColors.forestGreen),
+        ),
+      Expanded(
+        child: Column(
           children: [
-            menu,
-            if (showCall)
-              IconButton(
-                onPressed: onCall,
-                tooltip: context.l10n.callPeer,
-                icon: const Icon(Icons.phone_outlined,
-                    color: AppColors.forestGreen),
-              ),
-            Expanded(
-              child: Column(
+            Text(name,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppText.sectionTitle.copyWith(fontSize: 20)),
+            if (city.isNotEmpty)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppText.sectionTitle.copyWith(fontSize: 20)),
-                  if (city.isNotEmpty)
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(Icons.circle,
-                            size: 8, color: AppColors.forestGreen),
-                        const SizedBox(width: 4),
-                        Text(city,
-                            style: AppText.captionMuted
-                                .copyWith(color: AppColors.forestGreen)),
-                      ],
-                    ),
+                  const Icon(Icons.circle, size: 8, color: AppColors.forestGreen),
+                  const SizedBox(width: 4),
+                  Text(city,
+                      style: AppText.captionMuted
+                          .copyWith(color: AppColors.forestGreen)),
                 ],
               ),
-            ),
-            Avatar(name: name, url: avatarUrl, size: 48),
-            BackChevron(onTap: onBack),
           ],
         ),
-      );
+      ),
+      Avatar(name: name, url: avatarUrl, size: 48),
+      BackChevron(onTap: onBack),
+    ];
+    return Padding(
+      padding: const EdgeInsetsDirectional.fromSTEB(8, 10, 8, 10),
+      child: Row(children: context.isRtl ? children : children.reversed.toList()),
+    );
+  }
 }
 
 /// Builds banner + details card + day separators + bubbles (newest at bottom).
@@ -306,24 +309,32 @@ class _MessageList extends StatelessWidget {
     final lang = context.lang;
     final offer = conversation.offer;
 
+    String dayLabel(DateTime d) {
+      final now = DateTime.now();
+      return Fmt.sameDay(d, now)
+          ? l.today
+          : Fmt.sameDay(d, now.subtract(const Duration(days: 1)))
+              ? l.yesterday
+              : Fmt.date(d, lang);
+    }
+
     final items = <Widget>[];
+    DateTime? lastDay;
     if (offer != null) {
       final banner = _banner(context, offer);
       if (banner != null) items.add(banner);
+      // Like the design: banner, day chip, then the swap-details card.
+      if (messages.isNotEmpty) {
+        lastDay = messages.first.createdAt.toLocal();
+        items.add(_DayChip(label: dayLabel(lastDay)));
+      }
       items.add(_DetailsCard(offer: offer));
     }
 
-    DateTime? lastDay;
     for (final m in messages) {
       final d = m.createdAt.toLocal();
       if (lastDay == null || !Fmt.sameDay(lastDay, d)) {
-        final now = DateTime.now();
-        final label = Fmt.sameDay(d, now)
-            ? l.today
-            : Fmt.sameDay(d, now.subtract(const Duration(days: 1)))
-                ? l.yesterday
-                : Fmt.date(d, lang);
-        items.add(_DayChip(label: label));
+        items.add(_DayChip(label: dayLabel(d)));
         lastDay = d;
       }
       items.add(_Bubble(message: m, mine: m.senderId == uid));

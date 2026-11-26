@@ -45,6 +45,8 @@ class AuthScaffold extends StatelessWidget {
                       Image.asset('assets/images/logo.png',
                           width: logoSize,
                           height: logoSize,
+                          color: AppColors.canvas,
+                          colorBlendMode: BlendMode.multiply,
                           fit: BoxFit.contain),
                       form,
                       const Spacer(),

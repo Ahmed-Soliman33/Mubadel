@@ -27,7 +27,7 @@ class ProductSliverGrid extends ConsumerWidget {
           const gap = 12.0;
           final cardW = (c.crossAxisExtent - gap) / 2;
           // image (square) + padding + text block
-          final extent = (cardW - 20) + 20 + 128;
+          final extent = cardW + 150;
           return SliverGrid(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,

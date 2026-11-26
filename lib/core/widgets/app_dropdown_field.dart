@@ -46,8 +46,20 @@ class AppDropdownField<T> extends StatelessWidget {
       style: AppText.body,
       borderRadius: BorderRadius.circular(16),
       dropdownColor: Colors.white,
-      icon: const Icon(Icons.keyboard_arrow_down_rounded,
-          color: AppColors.textMuted),
+      icon: Padding(
+        padding: const EdgeInsetsDirectional.only(end: 6),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.keyboard_arrow_down_rounded,
+                color: AppColors.textMuted),
+            if (icon != null) ...[
+              const SizedBox(width: 8),
+              Icon(icon, color: AppColors.forestGreen),
+            ],
+          ],
+        ),
+      ),
       hint: hint == null
           ? null
           : Text(hint!,
@@ -61,12 +73,6 @@ class AppDropdownField<T> extends StatelessWidget {
         isDense: true,
         contentPadding: EdgeInsetsDirectional.symmetric(
             horizontal: 16, vertical: filled ? 18 : 16),
-        prefixIcon: icon == null
-            ? null
-            : Padding(
-                padding: const EdgeInsetsDirectional.only(start: 14, end: 8),
-                child: Icon(icon, color: AppColors.forestGreen)),
-        prefixIconConstraints: const BoxConstraints(),
         errorStyle:
             AppText.captionMuted.copyWith(color: AppColors.error, height: 1.2),
         enabledBorder: b(filled ? Colors.transparent : AppColors.border),

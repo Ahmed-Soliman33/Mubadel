@@ -36,7 +36,10 @@ class HomeScreen extends ConsumerWidget {
             SliverToBoxAdapter(
               child: PageHeader(
                 title: '',
-                titleWidget: Text.rich(TextSpan(children: [
+                titleWidget: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: AlignmentDirectional.centerStart,
+                  child: Text.rich(TextSpan(children: [
                   TextSpan(
                       text: l.appName,
                       style: AppText.pageTitle
@@ -46,7 +49,8 @@ class HomeScreen extends ConsumerWidget {
                       style: AppText.pageTitle.copyWith(
                           fontWeight: FontWeight.w400,
                           color: AppColors.forestGreen)),
-                ])),
+                  ])),
+                ),
                 subtitle: l.slogan,
               ),
             ),
@@ -137,7 +141,10 @@ class _Banner extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset('assets/images/logo.png', height: 52),
+                  Image.asset('assets/images/logo.png',
+                      height: 52,
+                      color: AppColors.softMint,
+                      colorBlendMode: BlendMode.multiply),
                   const SizedBox(height: 4),
                   Text(l.bannerText,
                       style: AppText.cardTitle.copyWith(

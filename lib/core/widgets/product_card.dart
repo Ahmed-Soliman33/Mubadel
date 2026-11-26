@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/products/data/product_models.dart';
+import '../constants/governorates.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_text.dart';
 import '../utils/formatters.dart';
@@ -119,31 +120,27 @@ class ProductCard extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         style: AppText.bodyMuted.copyWith(fontSize: 13)),
                     const SizedBox(height: 8),
-                    Row(
+                    Wrap(
+                      alignment: WrapAlignment.spaceBetween,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      spacing: 6,
+                      runSpacing: 6,
                       children: [
                         if (p.city != null && p.city!.isNotEmpty)
-                          Flexible(
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const Icon(Icons.location_on,
-                                    size: 14, color: AppColors.error),
-                                const SizedBox(width: 2),
-                                Flexible(
-                                  child: Text(p.city!,
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: AppText.captionMuted),
-                                ),
-                              ],
-                            ),
+                          Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              const Icon(Icons.location_on,
+                                  size: 14, color: AppColors.error),
+                              const SizedBox(width: 2),
+                              Text(cityLabel(p.city, context.lang),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppText.captionMuted),
+                            ],
                           ),
-                        const Spacer(),
-                        Flexible(
-                          flex: 2,
-                          child: StatusBadge.listing(context, p.listingType,
-                              fontSize: 11),
-                        ),
+                        StatusBadge.listing(context, p.listingType,
+                            fontSize: 11),
                       ],
                     ),
                     const SizedBox(height: 4),

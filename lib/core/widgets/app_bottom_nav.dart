@@ -37,19 +37,22 @@ class AppBottomNav extends StatelessWidget {
         top: false,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
-          child: Row(
-            children: [
-              for (var i = 0; i < items.length; i++)
-                Expanded(
-                  child: _NavItem(
-                    icon: i == index ? items[i].$2 : items[i].$1,
-                    label: items[i].$3,
-                    badge: items[i].$4,
-                    active: i == index,
-                    onTap: () => onTap(i),
+          child: SizedBox(
+            height: 62,
+            child: Row(
+              children: [
+                for (var i = 0; i < items.length; i++)
+                  Expanded(
+                    child: _NavItem(
+                      icon: i == index ? items[i].$2 : items[i].$1,
+                      label: items[i].$3,
+                      badge: items[i].$4,
+                      active: i == index,
+                      onTap: () => onTap(i),
+                    ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

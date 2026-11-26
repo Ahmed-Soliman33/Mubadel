@@ -133,17 +133,17 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
                     children: [
                       Expanded(
                         child: _TabButton(
-                          label: widget.isMine ? l.tabMyProducts : l.tabProducts,
-                          selected: _tab == 0,
-                          onTap: () => setState(() => _tab = 0),
+                          label: widget.isMine ? l.tabMyReviews : l.tabReviews,
+                          selected: _tab == 1,
+                          onTap: () => setState(() => _tab = 1),
                         ),
                       ),
                       const SizedBox(width: 12),
                       Expanded(
                         child: _TabButton(
-                          label: widget.isMine ? l.tabMyReviews : l.tabReviews,
-                          selected: _tab == 1,
-                          onTap: () => setState(() => _tab = 1),
+                          label: widget.isMine ? l.tabMyProducts : l.tabProducts,
+                          selected: _tab == 0,
+                          onTap: () => setState(() => _tab = 0),
                         ),
                       ),
                     ],

@@ -15,7 +15,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tagline => 'Your space to swap';
 
   @override
-  String get slogan => 'Let what you don\'\'t need find a new owner';
+  String get slogan => 'Let what you don\'t need find a new owner';
 
   @override
   String get start => 'Start';
@@ -214,7 +214,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get forgotSubtitle =>
-      'Enter your email and we\'\'ll send you a reset code';
+      'Enter your email and we\'ll send you a reset code';
 
   @override
   String get sendCode => 'Send code';
@@ -253,7 +253,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get bannerText =>
-      'What you don\'\'t need could be a treasure to someone else';
+      'What you don\'t need could be a treasure to someone else';
 
   @override
   String get bannerButton => 'Start swapping';
@@ -480,7 +480,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get chooseYourProduct => 'Choose the item you\'\'ll offer';
+  String get chooseYourProduct => 'Choose the item you\'ll offer';
 
   @override
   String get noProductsToOffer => 'You have no available products';
@@ -495,7 +495,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cashDiff => 'Cash difference (optional)';
 
   @override
-  String get cashDiffHint => 'e.g. I\'\'ll add EGP 2,500';
+  String get cashDiffHint => 'e.g. I\'ll add EGP 2,500';
 
   @override
   String get cashDiffNote =>
