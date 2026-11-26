@@ -1363,6 +1363,174 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'رقم التليفون غير متاح'**
   String get phoneUnavailable;
+
+  /// No description provided for @profileTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'الملف الشخصي'**
+  String get profileTitle;
+
+  /// No description provided for @verifiedMember.
+  ///
+  /// In ar, this message translates to:
+  /// **'عضو موثق في مجتمع مُبدل'**
+  String get verifiedMember;
+
+  /// No description provided for @statRating.
+  ///
+  /// In ar, this message translates to:
+  /// **'التقييم'**
+  String get statRating;
+
+  /// No description provided for @statSwaps.
+  ///
+  /// In ar, this message translates to:
+  /// **'تبديل'**
+  String get statSwaps;
+
+  /// No description provided for @statItems.
+  ///
+  /// In ar, this message translates to:
+  /// **'عنصر'**
+  String get statItems;
+
+  /// No description provided for @myItems.
+  ///
+  /// In ar, this message translates to:
+  /// **'عناصري'**
+  String get myItems;
+
+  /// No description provided for @userItems.
+  ///
+  /// In ar, this message translates to:
+  /// **'العناصر'**
+  String get userItems;
+
+  /// No description provided for @tabMyProducts.
+  ///
+  /// In ar, this message translates to:
+  /// **'منتجاتي'**
+  String get tabMyProducts;
+
+  /// No description provided for @tabMyReviews.
+  ///
+  /// In ar, this message translates to:
+  /// **'تقييماتي'**
+  String get tabMyReviews;
+
+  /// No description provided for @tabProducts.
+  ///
+  /// In ar, this message translates to:
+  /// **'المنتجات'**
+  String get tabProducts;
+
+  /// No description provided for @tabReviews.
+  ///
+  /// In ar, this message translates to:
+  /// **'التقييمات'**
+  String get tabReviews;
+
+  /// No description provided for @subForSwap.
+  ///
+  /// In ar, this message translates to:
+  /// **'للتبديل'**
+  String get subForSwap;
+
+  /// No description provided for @subForSale.
+  ///
+  /// In ar, this message translates to:
+  /// **'للبيع'**
+  String get subForSale;
+
+  /// No description provided for @subForBoth.
+  ///
+  /// In ar, this message translates to:
+  /// **'بيع أو تبديل'**
+  String get subForBoth;
+
+  /// No description provided for @subDone.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم بنجاح'**
+  String get subDone;
+
+  /// No description provided for @noReviews.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش تقييمات لسه'**
+  String get noReviews;
+
+  /// No description provided for @noMyProducts.
+  ///
+  /// In ar, this message translates to:
+  /// **'لسه مفيش منتجات'**
+  String get noMyProducts;
+
+  /// No description provided for @settingsTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'الإعدادات'**
+  String get settingsTitle;
+
+  /// No description provided for @settingsSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'إدارة حسابك وتفضيلاتك'**
+  String get settingsSubtitle;
+
+  /// No description provided for @editProfileTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعديل الملف الشخصي'**
+  String get editProfileTitle;
+
+  /// No description provided for @changePhoto.
+  ///
+  /// In ar, this message translates to:
+  /// **'تغيير الصورة'**
+  String get changePhoto;
+
+  /// No description provided for @languageLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'اللغة'**
+  String get languageLabel;
+
+  /// No description provided for @langArabic.
+  ///
+  /// In ar, this message translates to:
+  /// **'العربية'**
+  String get langArabic;
+
+  /// No description provided for @langEnglish.
+  ///
+  /// In ar, this message translates to:
+  /// **'English'**
+  String get langEnglish;
+
+  /// No description provided for @logout.
+  ///
+  /// In ar, this message translates to:
+  /// **'تسجيل الخروج'**
+  String get logout;
+
+  /// No description provided for @logoutConfirm.
+  ///
+  /// In ar, this message translates to:
+  /// **'متأكد إنك عايز تسجل خروج؟'**
+  String get logoutConfirm;
+
+  /// No description provided for @profileSaved.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم حفظ التغييرات'**
+  String get profileSaved;
+
+  /// No description provided for @accountSection.
+  ///
+  /// In ar, this message translates to:
+  /// **'الحساب'**
+  String get accountSection;
 }
 
 class _AppLocalizationsDelegate

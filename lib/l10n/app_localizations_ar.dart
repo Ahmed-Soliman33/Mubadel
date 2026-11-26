@@ -659,4 +659,88 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get phoneUnavailable => 'رقم التليفون غير متاح';
+
+  @override
+  String get profileTitle => 'الملف الشخصي';
+
+  @override
+  String get verifiedMember => 'عضو موثق في مجتمع مُبدل';
+
+  @override
+  String get statRating => 'التقييم';
+
+  @override
+  String get statSwaps => 'تبديل';
+
+  @override
+  String get statItems => 'عنصر';
+
+  @override
+  String get myItems => 'عناصري';
+
+  @override
+  String get userItems => 'العناصر';
+
+  @override
+  String get tabMyProducts => 'منتجاتي';
+
+  @override
+  String get tabMyReviews => 'تقييماتي';
+
+  @override
+  String get tabProducts => 'المنتجات';
+
+  @override
+  String get tabReviews => 'التقييمات';
+
+  @override
+  String get subForSwap => 'للتبديل';
+
+  @override
+  String get subForSale => 'للبيع';
+
+  @override
+  String get subForBoth => 'بيع أو تبديل';
+
+  @override
+  String get subDone => 'تم بنجاح';
+
+  @override
+  String get noReviews => 'مفيش تقييمات لسه';
+
+  @override
+  String get noMyProducts => 'لسه مفيش منتجات';
+
+  @override
+  String get settingsTitle => 'الإعدادات';
+
+  @override
+  String get settingsSubtitle => 'إدارة حسابك وتفضيلاتك';
+
+  @override
+  String get editProfileTitle => 'تعديل الملف الشخصي';
+
+  @override
+  String get changePhoto => 'تغيير الصورة';
+
+  @override
+  String get languageLabel => 'اللغة';
+
+  @override
+  String get langArabic => 'العربية';
+
+  @override
+  String get langEnglish => 'English';
+
+  @override
+  String get logout => 'تسجيل الخروج';
+
+  @override
+  String get logoutConfirm => 'متأكد إنك عايز تسجل خروج؟';
+
+  @override
+  String get profileSaved => 'تم حفظ التغييرات';
+
+  @override
+  String get accountSection => 'الحساب';
 }

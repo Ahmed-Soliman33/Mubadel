@@ -665,4 +665,88 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get phoneUnavailable => 'Phone number unavailable';
+
+  @override
+  String get profileTitle => 'Profile';
+
+  @override
+  String get verifiedMember => 'Verified Mubadel member';
+
+  @override
+  String get statRating => 'Rating';
+
+  @override
+  String get statSwaps => 'Swaps';
+
+  @override
+  String get statItems => 'Items';
+
+  @override
+  String get myItems => 'My items';
+
+  @override
+  String get userItems => 'Items';
+
+  @override
+  String get tabMyProducts => 'My products';
+
+  @override
+  String get tabMyReviews => 'My reviews';
+
+  @override
+  String get tabProducts => 'Products';
+
+  @override
+  String get tabReviews => 'Reviews';
+
+  @override
+  String get subForSwap => 'For swap';
+
+  @override
+  String get subForSale => 'For sale';
+
+  @override
+  String get subForBoth => 'Sell or swap';
+
+  @override
+  String get subDone => 'Completed';
+
+  @override
+  String get noReviews => 'No reviews yet';
+
+  @override
+  String get noMyProducts => 'No products yet';
+
+  @override
+  String get settingsTitle => 'Settings';
+
+  @override
+  String get settingsSubtitle => 'Manage your account and preferences';
+
+  @override
+  String get editProfileTitle => 'Edit profile';
+
+  @override
+  String get changePhoto => 'Change photo';
+
+  @override
+  String get languageLabel => 'Language';
+
+  @override
+  String get langArabic => 'العربية';
+
+  @override
+  String get langEnglish => 'English';
+
+  @override
+  String get logout => 'Log out';
+
+  @override
+  String get logoutConfirm => 'Are you sure you want to log out?';
+
+  @override
+  String get profileSaved => 'Changes saved';
+
+  @override
+  String get accountSection => 'Account';
 }

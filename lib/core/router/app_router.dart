@@ -18,7 +18,9 @@ import '../../features/products/presentation/search_screen.dart';
 import '../../features/chat/presentation/messages_screen.dart';
 import '../../features/offers/presentation/make_offer_screen.dart';
 import '../../features/chat/presentation/chat_screen.dart';
-import '../widgets/placeholder_screen.dart';
+import '../../features/profile/presentation/edit_profile_screen.dart';
+import '../../features/profile/presentation/profile_screens.dart';
+import '../../features/profile/presentation/settings_screen.dart';
 import 'main_shell.dart';
 
 class AppRoutes {
@@ -113,8 +115,7 @@ final routerProvider = Provider<GoRouter>((ref) {
               pageBuilder: (_, _) => const NoTransitionPage(child: MessagesScreen())),
           GoRoute(
               path: AppRoutes.profile,
-              pageBuilder: (_, _) => const NoTransitionPage(
-                  child: PlaceholderScreen('profile'))),
+              pageBuilder: (_, _) => const NoTransitionPage(child: MyProfileScreen())),
         ],
       ),
       GoRoute(
@@ -138,18 +139,19 @@ final routerProvider = Provider<GoRouter>((ref) {
               categoryId: int.tryParse(s.uri.queryParameters['category'] ?? ''))),
       GoRoute(
           path: '/user/:id',
-          builder: (_, s) => PlaceholderScreen('user')),
+          builder: (_, s) =>
+              PublicProfileScreen(userId: s.pathParameters['id']!)),
       GoRoute(
           path: '/chat/:id',
           builder: (_, s) =>
               ChatScreen(conversationId: s.pathParameters['id']!)),
       GoRoute(
         path: AppRoutes.settings,
-        builder: (_, _) => const PlaceholderScreen('settings'),
+        builder: (_, _) => const SettingsScreen(),
         routes: [
           GoRoute(
               path: 'edit-profile',
-              builder: (_, _) => const PlaceholderScreen('edit profile')),
+              builder: (_, _) => const EditProfileScreen()),
         ],
       ),
     ],
