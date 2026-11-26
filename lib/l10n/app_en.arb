@@ -236,5 +236,38 @@
   "noOutgoingOffers": "No outgoing offers",
   "offerAccepted": "Offer accepted",
   "offerRejected": "Offer rejected",
-  "offerCancelled": "Offer cancelled"
+  "offerCancelled": "Offer cancelled",
+  "noConversations": "No conversations yet",
+  "noConversationsHint": "Message a seller from a product page to start chatting",
+  "dealAcceptedSwap": "✓ Swap request accepted",
+  "dealAcceptedBuy": "✓ Purchase request accepted",
+  "dealCompleted": "Deal completed successfully 🎉",
+  "dealCancelled": "The deal was cancelled",
+  "swapDetails": "Swap details",
+  "buyDetails": "Request details",
+  "today": "Today",
+  "yesterday": "Yesterday",
+  "typeMessage": "Type a message...",
+  "viewProduct": "View product",
+  "confirmComplete": "Confirm deal completion",
+  "cancelDeal": "Cancel the deal",
+  "confirmCompleteBody": "Was the deal really completed? Product statuses will be updated.",
+  "cancelDealBody": "The deal will be cancelled and products made available again. Sure?",
+  "dealCompletedSnack": "Deal confirmed as completed",
+  "dealCancelledSnack": "Deal cancelled",
+  "rateExperience": "Rate your experience with {name}",
+  "@rateExperience": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "rateNow": "Rate now",
+  "writeComment": "Write a comment (optional)",
+  "submitReview": "Submit review",
+  "reviewSent": "Thanks for your review",
+  "errChooseRating": "Choose a star rating",
+  "callPeer": "Call",
+  "phoneUnavailable": "Phone number unavailable"
 }

@@ -236,5 +236,38 @@
   "noOutgoingOffers": "مفيش عروض صادرة",
   "offerAccepted": "تم قبول العرض",
   "offerRejected": "تم رفض العرض",
-  "offerCancelled": "تم إلغاء العرض"
+  "offerCancelled": "تم إلغاء العرض",
+  "noConversations": "مفيش محادثات لسه",
+  "noConversationsHint": "راسل بائع من صفحة المنتج وابدأ المحادثة",
+  "dealAcceptedSwap": "✓ تم قبول طلب التبادل",
+  "dealAcceptedBuy": "✓ تم قبول طلب الشراء",
+  "dealCompleted": "تمت الصفقة بنجاح 🎉",
+  "dealCancelled": "تم إلغاء الاتفاق",
+  "swapDetails": "تفاصيل التبادل",
+  "buyDetails": "تفاصيل الطلب",
+  "today": "اليوم",
+  "yesterday": "أمس",
+  "typeMessage": "اكتب رسالة...",
+  "viewProduct": "عرض المنتج",
+  "confirmComplete": "تأكيد إتمام الصفقة",
+  "cancelDeal": "إلغاء الاتفاق",
+  "confirmCompleteBody": "هل تمت الصفقة فعلاً؟ هيتم تغيير حالة المنتجات.",
+  "cancelDealBody": "هيتم إلغاء الاتفاق وإرجاع المنتجات متاحة. متأكد؟",
+  "dealCompletedSnack": "تم تأكيد إتمام الصفقة",
+  "dealCancelledSnack": "تم إلغاء الاتفاق",
+  "rateExperience": "قيّم تجربتك مع {name}",
+  "@rateExperience": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "rateNow": "قيّم دلوقتي",
+  "writeComment": "اكتب تعليقك (اختياري)",
+  "submitReview": "إرسال التقييم",
+  "reviewSent": "شكرًا على تقييمك",
+  "errChooseRating": "اختار عدد النجوم",
+  "callPeer": "اتصال",
+  "phoneUnavailable": "رقم التليفون غير متاح"
 }

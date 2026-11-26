@@ -1207,6 +1207,162 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'تم إلغاء العرض'**
   String get offerCancelled;
+
+  /// No description provided for @noConversations.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش محادثات لسه'**
+  String get noConversations;
+
+  /// No description provided for @noConversationsHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'راسل بائع من صفحة المنتج وابدأ المحادثة'**
+  String get noConversationsHint;
+
+  /// No description provided for @dealAcceptedSwap.
+  ///
+  /// In ar, this message translates to:
+  /// **'✓ تم قبول طلب التبادل'**
+  String get dealAcceptedSwap;
+
+  /// No description provided for @dealAcceptedBuy.
+  ///
+  /// In ar, this message translates to:
+  /// **'✓ تم قبول طلب الشراء'**
+  String get dealAcceptedBuy;
+
+  /// No description provided for @dealCompleted.
+  ///
+  /// In ar, this message translates to:
+  /// **'تمت الصفقة بنجاح 🎉'**
+  String get dealCompleted;
+
+  /// No description provided for @dealCancelled.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم إلغاء الاتفاق'**
+  String get dealCancelled;
+
+  /// No description provided for @swapDetails.
+  ///
+  /// In ar, this message translates to:
+  /// **'تفاصيل التبادل'**
+  String get swapDetails;
+
+  /// No description provided for @buyDetails.
+  ///
+  /// In ar, this message translates to:
+  /// **'تفاصيل الطلب'**
+  String get buyDetails;
+
+  /// No description provided for @today.
+  ///
+  /// In ar, this message translates to:
+  /// **'اليوم'**
+  String get today;
+
+  /// No description provided for @yesterday.
+  ///
+  /// In ar, this message translates to:
+  /// **'أمس'**
+  String get yesterday;
+
+  /// No description provided for @typeMessage.
+  ///
+  /// In ar, this message translates to:
+  /// **'اكتب رسالة...'**
+  String get typeMessage;
+
+  /// No description provided for @viewProduct.
+  ///
+  /// In ar, this message translates to:
+  /// **'عرض المنتج'**
+  String get viewProduct;
+
+  /// No description provided for @confirmComplete.
+  ///
+  /// In ar, this message translates to:
+  /// **'تأكيد إتمام الصفقة'**
+  String get confirmComplete;
+
+  /// No description provided for @cancelDeal.
+  ///
+  /// In ar, this message translates to:
+  /// **'إلغاء الاتفاق'**
+  String get cancelDeal;
+
+  /// No description provided for @confirmCompleteBody.
+  ///
+  /// In ar, this message translates to:
+  /// **'هل تمت الصفقة فعلاً؟ هيتم تغيير حالة المنتجات.'**
+  String get confirmCompleteBody;
+
+  /// No description provided for @cancelDealBody.
+  ///
+  /// In ar, this message translates to:
+  /// **'هيتم إلغاء الاتفاق وإرجاع المنتجات متاحة. متأكد؟'**
+  String get cancelDealBody;
+
+  /// No description provided for @dealCompletedSnack.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم تأكيد إتمام الصفقة'**
+  String get dealCompletedSnack;
+
+  /// No description provided for @dealCancelledSnack.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم إلغاء الاتفاق'**
+  String get dealCancelledSnack;
+
+  /// No description provided for @rateExperience.
+  ///
+  /// In ar, this message translates to:
+  /// **'قيّم تجربتك مع {name}'**
+  String rateExperience(String name);
+
+  /// No description provided for @rateNow.
+  ///
+  /// In ar, this message translates to:
+  /// **'قيّم دلوقتي'**
+  String get rateNow;
+
+  /// No description provided for @writeComment.
+  ///
+  /// In ar, this message translates to:
+  /// **'اكتب تعليقك (اختياري)'**
+  String get writeComment;
+
+  /// No description provided for @submitReview.
+  ///
+  /// In ar, this message translates to:
+  /// **'إرسال التقييم'**
+  String get submitReview;
+
+  /// No description provided for @reviewSent.
+  ///
+  /// In ar, this message translates to:
+  /// **'شكرًا على تقييمك'**
+  String get reviewSent;
+
+  /// No description provided for @errChooseRating.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختار عدد النجوم'**
+  String get errChooseRating;
+
+  /// No description provided for @callPeer.
+  ///
+  /// In ar, this message translates to:
+  /// **'اتصال'**
+  String get callPeer;
+
+  /// No description provided for @phoneUnavailable.
+  ///
+  /// In ar, this message translates to:
+  /// **'رقم التليفون غير متاح'**
+  String get phoneUnavailable;
 }
 
 class _AppLocalizationsDelegate

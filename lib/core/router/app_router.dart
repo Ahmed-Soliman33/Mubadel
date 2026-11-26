@@ -17,6 +17,7 @@ import '../../features/products/presentation/product_form_screen.dart';
 import '../../features/products/presentation/search_screen.dart';
 import '../../features/chat/presentation/messages_screen.dart';
 import '../../features/offers/presentation/make_offer_screen.dart';
+import '../../features/chat/presentation/chat_screen.dart';
 import '../widgets/placeholder_screen.dart';
 import 'main_shell.dart';
 
@@ -140,7 +141,8 @@ final routerProvider = Provider<GoRouter>((ref) {
           builder: (_, s) => PlaceholderScreen('user')),
       GoRoute(
           path: '/chat/:id',
-          builder: (_, s) => PlaceholderScreen('chat')),
+          builder: (_, s) =>
+              ChatScreen(conversationId: s.pathParameters['id']!)),
       GoRoute(
         path: AppRoutes.settings,
         builder: (_, _) => const PlaceholderScreen('settings'),

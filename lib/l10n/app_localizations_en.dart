@@ -582,4 +582,87 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get offerCancelled => 'Offer cancelled';
+
+  @override
+  String get noConversations => 'No conversations yet';
+
+  @override
+  String get noConversationsHint =>
+      'Message a seller from a product page to start chatting';
+
+  @override
+  String get dealAcceptedSwap => '✓ Swap request accepted';
+
+  @override
+  String get dealAcceptedBuy => '✓ Purchase request accepted';
+
+  @override
+  String get dealCompleted => 'Deal completed successfully 🎉';
+
+  @override
+  String get dealCancelled => 'The deal was cancelled';
+
+  @override
+  String get swapDetails => 'Swap details';
+
+  @override
+  String get buyDetails => 'Request details';
+
+  @override
+  String get today => 'Today';
+
+  @override
+  String get yesterday => 'Yesterday';
+
+  @override
+  String get typeMessage => 'Type a message...';
+
+  @override
+  String get viewProduct => 'View product';
+
+  @override
+  String get confirmComplete => 'Confirm deal completion';
+
+  @override
+  String get cancelDeal => 'Cancel the deal';
+
+  @override
+  String get confirmCompleteBody =>
+      'Was the deal really completed? Product statuses will be updated.';
+
+  @override
+  String get cancelDealBody =>
+      'The deal will be cancelled and products made available again. Sure?';
+
+  @override
+  String get dealCompletedSnack => 'Deal confirmed as completed';
+
+  @override
+  String get dealCancelledSnack => 'Deal cancelled';
+
+  @override
+  String rateExperience(String name) {
+    return 'Rate your experience with $name';
+  }
+
+  @override
+  String get rateNow => 'Rate now';
+
+  @override
+  String get writeComment => 'Write a comment (optional)';
+
+  @override
+  String get submitReview => 'Submit review';
+
+  @override
+  String get reviewSent => 'Thanks for your review';
+
+  @override
+  String get errChooseRating => 'Choose a star rating';
+
+  @override
+  String get callPeer => 'Call';
+
+  @override
+  String get phoneUnavailable => 'Phone number unavailable';
 }

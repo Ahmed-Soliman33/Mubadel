@@ -4,7 +4,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_text.dart';
 import '../../../core/utils/l10n_labels.dart';
 import '../../../core/widgets/page_header.dart';
-import '../../../core/widgets/states.dart';
+import 'conversations_tab.dart';
 import '../../offers/presentation/offers_tab.dart';
 
 /// "رسائلي" tab: segmented control → conversations | offers.
@@ -50,7 +50,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
         ),
         Expanded(
           child: _tab == 0
-              ? const EmptyState(title: '…', icon: Icons.chat_bubble_outline)
+              ? const ConversationsTab()
               : const OffersTab(),
         ),
       ],

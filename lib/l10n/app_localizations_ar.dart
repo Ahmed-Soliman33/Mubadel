@@ -577,4 +577,86 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get offerCancelled => 'تم إلغاء العرض';
+
+  @override
+  String get noConversations => 'مفيش محادثات لسه';
+
+  @override
+  String get noConversationsHint => 'راسل بائع من صفحة المنتج وابدأ المحادثة';
+
+  @override
+  String get dealAcceptedSwap => '✓ تم قبول طلب التبادل';
+
+  @override
+  String get dealAcceptedBuy => '✓ تم قبول طلب الشراء';
+
+  @override
+  String get dealCompleted => 'تمت الصفقة بنجاح 🎉';
+
+  @override
+  String get dealCancelled => 'تم إلغاء الاتفاق';
+
+  @override
+  String get swapDetails => 'تفاصيل التبادل';
+
+  @override
+  String get buyDetails => 'تفاصيل الطلب';
+
+  @override
+  String get today => 'اليوم';
+
+  @override
+  String get yesterday => 'أمس';
+
+  @override
+  String get typeMessage => 'اكتب رسالة...';
+
+  @override
+  String get viewProduct => 'عرض المنتج';
+
+  @override
+  String get confirmComplete => 'تأكيد إتمام الصفقة';
+
+  @override
+  String get cancelDeal => 'إلغاء الاتفاق';
+
+  @override
+  String get confirmCompleteBody =>
+      'هل تمت الصفقة فعلاً؟ هيتم تغيير حالة المنتجات.';
+
+  @override
+  String get cancelDealBody =>
+      'هيتم إلغاء الاتفاق وإرجاع المنتجات متاحة. متأكد؟';
+
+  @override
+  String get dealCompletedSnack => 'تم تأكيد إتمام الصفقة';
+
+  @override
+  String get dealCancelledSnack => 'تم إلغاء الاتفاق';
+
+  @override
+  String rateExperience(String name) {
+    return 'قيّم تجربتك مع $name';
+  }
+
+  @override
+  String get rateNow => 'قيّم دلوقتي';
+
+  @override
+  String get writeComment => 'اكتب تعليقك (اختياري)';
+
+  @override
+  String get submitReview => 'إرسال التقييم';
+
+  @override
+  String get reviewSent => 'شكرًا على تقييمك';
+
+  @override
+  String get errChooseRating => 'اختار عدد النجوم';
+
+  @override
+  String get callPeer => 'اتصال';
+
+  @override
+  String get phoneUnavailable => 'رقم التليفون غير متاح';
 }

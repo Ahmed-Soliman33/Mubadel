@@ -83,7 +83,7 @@ class ProfileRepository {
         'phone': phone.trim(),
         'city': city,
         'address': address.trim(),
-        if (avatarUrl != null) 'avatar_url': avatarUrl,
+        'avatar_url': ?avatarUrl,
       }).eq('id', _uid);
 
   Future<List<Review>> reviewsFor(String userId) async {
