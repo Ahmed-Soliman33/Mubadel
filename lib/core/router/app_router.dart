@@ -6,6 +6,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../../features/auth/presentation/forgot_password_screen.dart';
+import '../../features/auth/presentation/login_screen.dart';
+import '../../features/auth/presentation/signup_screen.dart';
+import '../../features/auth/presentation/splash_screen.dart';
 import '../widgets/placeholder_screen.dart';
 import 'main_shell.dart';
 
@@ -72,16 +76,16 @@ final routerProvider = Provider<GoRouter>((ref) {
     routes: [
       GoRoute(
           path: AppRoutes.splash,
-          builder: (_, _) => const PlaceholderScreen('splash')),
+          builder: (_, _) => const SplashScreen()),
       GoRoute(
           path: AppRoutes.login,
-          builder: (_, _) => const PlaceholderScreen('login')),
+          builder: (_, _) => const LoginScreen()),
       GoRoute(
           path: AppRoutes.signup,
-          builder: (_, _) => const PlaceholderScreen('signup')),
+          builder: (_, _) => const SignupScreen()),
       GoRoute(
           path: AppRoutes.forgot,
-          builder: (_, _) => const PlaceholderScreen('forgot')),
+          builder: (_, _) => const ForgotPasswordScreen()),
       ShellRoute(
         builder: (context, state, child) =>
             MainShell(location: state.matchedLocation, child: child),

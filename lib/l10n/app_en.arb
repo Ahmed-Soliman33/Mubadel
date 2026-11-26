@@ -38,5 +38,58 @@
         "type": "int"
       }
     }
-  }
+  },
+  "loginTitle": "Log in",
+  "loginSubtitle": "Enter your details to access your account",
+  "email": "Email",
+  "emailHint": "Enter your email",
+  "password": "Password",
+  "passwordHint": "Enter your password",
+  "rememberMe": "Remember me",
+  "forgotPassword": "Forgot password?",
+  "loginButton": "Log in",
+  "noAccount": "New here?",
+  "signUpNow": "Sign up",
+  "signupTitle": "Create account",
+  "signupSubtitle": "Fill in your details to create your account",
+  "fullName": "Full name",
+  "fullNameHint": "Enter your full name",
+  "phone": "Phone number",
+  "phoneHint": "010xxxxxxxx",
+  "governorate": "Governorate",
+  "selectGovernorate": "Select governorate",
+  "address": "Address",
+  "addressHint": "Enter your address",
+  "createAccount": "Create account",
+  "haveAccount": "Already have an account?",
+  "loginNow": "Log in",
+  "errEmailInvalid": "Enter a valid email",
+  "errPasswordShort": "Password must be at least 6 characters",
+  "errRequired": "This field is required",
+  "errPhoneInvalid": "Enter a valid Egyptian mobile number",
+  "errNameShort": "Name must be at least 3 characters",
+  "errInvalidCredentials": "Incorrect email or password",
+  "errEmailTaken": "This email is already registered",
+  "errInvalidCode": "The code is invalid or expired",
+  "errNetwork": "No internet connection",
+  "errPasswordsMismatch": "Passwords do not match",
+  "forgotTitle": "Forgot password?",
+  "forgotSubtitle": "Enter your email and we''ll send you a reset code",
+  "sendCode": "Send code",
+  "resetTitle": "Reset password",
+  "resetSubtitle": "Enter the code sent to {email} and your new password",
+  "@resetSubtitle": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "code": "Code",
+  "codeHint": "Enter the 6-digit code",
+  "newPassword": "New password",
+  "confirmPassword": "Confirm password",
+  "savePassword": "Save password",
+  "backToLogin": "Back to login",
+  "splashLanguage": "العربية"
 }

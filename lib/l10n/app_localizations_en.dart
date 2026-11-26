@@ -106,4 +106,145 @@ class AppLocalizationsEn extends AppLocalizations {
   String ratingsCount(int count) {
     return '($count reviews)';
   }
+
+  @override
+  String get loginTitle => 'Log in';
+
+  @override
+  String get loginSubtitle => 'Enter your details to access your account';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get emailHint => 'Enter your email';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get passwordHint => 'Enter your password';
+
+  @override
+  String get rememberMe => 'Remember me';
+
+  @override
+  String get forgotPassword => 'Forgot password?';
+
+  @override
+  String get loginButton => 'Log in';
+
+  @override
+  String get noAccount => 'New here?';
+
+  @override
+  String get signUpNow => 'Sign up';
+
+  @override
+  String get signupTitle => 'Create account';
+
+  @override
+  String get signupSubtitle => 'Fill in your details to create your account';
+
+  @override
+  String get fullName => 'Full name';
+
+  @override
+  String get fullNameHint => 'Enter your full name';
+
+  @override
+  String get phone => 'Phone number';
+
+  @override
+  String get phoneHint => '010xxxxxxxx';
+
+  @override
+  String get governorate => 'Governorate';
+
+  @override
+  String get selectGovernorate => 'Select governorate';
+
+  @override
+  String get address => 'Address';
+
+  @override
+  String get addressHint => 'Enter your address';
+
+  @override
+  String get createAccount => 'Create account';
+
+  @override
+  String get haveAccount => 'Already have an account?';
+
+  @override
+  String get loginNow => 'Log in';
+
+  @override
+  String get errEmailInvalid => 'Enter a valid email';
+
+  @override
+  String get errPasswordShort => 'Password must be at least 6 characters';
+
+  @override
+  String get errRequired => 'This field is required';
+
+  @override
+  String get errPhoneInvalid => 'Enter a valid Egyptian mobile number';
+
+  @override
+  String get errNameShort => 'Name must be at least 3 characters';
+
+  @override
+  String get errInvalidCredentials => 'Incorrect email or password';
+
+  @override
+  String get errEmailTaken => 'This email is already registered';
+
+  @override
+  String get errInvalidCode => 'The code is invalid or expired';
+
+  @override
+  String get errNetwork => 'No internet connection';
+
+  @override
+  String get errPasswordsMismatch => 'Passwords do not match';
+
+  @override
+  String get forgotTitle => 'Forgot password?';
+
+  @override
+  String get forgotSubtitle =>
+      'Enter your email and we\'\'ll send you a reset code';
+
+  @override
+  String get sendCode => 'Send code';
+
+  @override
+  String get resetTitle => 'Reset password';
+
+  @override
+  String resetSubtitle(String email) {
+    return 'Enter the code sent to $email and your new password';
+  }
+
+  @override
+  String get code => 'Code';
+
+  @override
+  String get codeHint => 'Enter the 6-digit code';
+
+  @override
+  String get newPassword => 'New password';
+
+  @override
+  String get confirmPassword => 'Confirm password';
+
+  @override
+  String get savePassword => 'Save password';
+
+  @override
+  String get backToLogin => 'Back to login';
+
+  @override
+  String get splashLanguage => 'العربية';
 }

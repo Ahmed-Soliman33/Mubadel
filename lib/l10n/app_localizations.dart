@@ -289,6 +289,282 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'({count} تقييم)'**
   String ratingsCount(int count);
+
+  /// No description provided for @loginTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'تسجيل الدخول'**
+  String get loginTitle;
+
+  /// No description provided for @loginSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'املأ البيانات لدخول حسابك'**
+  String get loginSubtitle;
+
+  /// No description provided for @email.
+  ///
+  /// In ar, this message translates to:
+  /// **'البريد الإلكتروني'**
+  String get email;
+
+  /// No description provided for @emailHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل بريدك الإلكتروني'**
+  String get emailHint;
+
+  /// No description provided for @password.
+  ///
+  /// In ar, this message translates to:
+  /// **'كلمة المرور'**
+  String get password;
+
+  /// No description provided for @passwordHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل كلمة المرور'**
+  String get passwordHint;
+
+  /// No description provided for @rememberMe.
+  ///
+  /// In ar, this message translates to:
+  /// **'تذكرني'**
+  String get rememberMe;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسيت كلمة المرور؟'**
+  String get forgotPassword;
+
+  /// No description provided for @loginButton.
+  ///
+  /// In ar, this message translates to:
+  /// **'تسجيل الدخول'**
+  String get loginButton;
+
+  /// No description provided for @noAccount.
+  ///
+  /// In ar, this message translates to:
+  /// **'إنشاء حساب جديد؟'**
+  String get noAccount;
+
+  /// No description provided for @signUpNow.
+  ///
+  /// In ar, this message translates to:
+  /// **'سجل دلوقتي'**
+  String get signUpNow;
+
+  /// No description provided for @signupTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'إنشاء حساب جديد'**
+  String get signupTitle;
+
+  /// No description provided for @signupSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'املأ البيانات لإنشاء حسابك الجديد'**
+  String get signupSubtitle;
+
+  /// No description provided for @fullName.
+  ///
+  /// In ar, this message translates to:
+  /// **'الاسم بالكامل'**
+  String get fullName;
+
+  /// No description provided for @fullNameHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل اسمك بالكامل'**
+  String get fullNameHint;
+
+  /// No description provided for @phone.
+  ///
+  /// In ar, this message translates to:
+  /// **'رقم التليفون'**
+  String get phone;
+
+  /// No description provided for @phoneHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'010xxxxxxxx'**
+  String get phoneHint;
+
+  /// No description provided for @governorate.
+  ///
+  /// In ar, this message translates to:
+  /// **'المحافظة'**
+  String get governorate;
+
+  /// No description provided for @selectGovernorate.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر المحافظة'**
+  String get selectGovernorate;
+
+  /// No description provided for @address.
+  ///
+  /// In ar, this message translates to:
+  /// **'العنوان'**
+  String get address;
+
+  /// No description provided for @addressHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل عنوانك'**
+  String get addressHint;
+
+  /// No description provided for @createAccount.
+  ///
+  /// In ar, this message translates to:
+  /// **'إنشاء حساب'**
+  String get createAccount;
+
+  /// No description provided for @haveAccount.
+  ///
+  /// In ar, this message translates to:
+  /// **'عندك حساب؟'**
+  String get haveAccount;
+
+  /// No description provided for @loginNow.
+  ///
+  /// In ar, this message translates to:
+  /// **'سجّل دخول'**
+  String get loginNow;
+
+  /// No description provided for @errEmailInvalid.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل بريد إلكتروني صحيح'**
+  String get errEmailInvalid;
+
+  /// No description provided for @errPasswordShort.
+  ///
+  /// In ar, this message translates to:
+  /// **'كلمة المرور لازم تكون ٦ حروف على الأقل'**
+  String get errPasswordShort;
+
+  /// No description provided for @errRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'الحقل ده مطلوب'**
+  String get errRequired;
+
+  /// No description provided for @errPhoneInvalid.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل رقم موبايل مصري صحيح'**
+  String get errPhoneInvalid;
+
+  /// No description provided for @errNameShort.
+  ///
+  /// In ar, this message translates to:
+  /// **'الاسم لازم يكون ٣ حروف على الأقل'**
+  String get errNameShort;
+
+  /// No description provided for @errInvalidCredentials.
+  ///
+  /// In ar, this message translates to:
+  /// **'البريد أو كلمة المرور غير صحيحة'**
+  String get errInvalidCredentials;
+
+  /// No description provided for @errEmailTaken.
+  ///
+  /// In ar, this message translates to:
+  /// **'البريد ده مسجّل قبل كده'**
+  String get errEmailTaken;
+
+  /// No description provided for @errInvalidCode.
+  ///
+  /// In ar, this message translates to:
+  /// **'الكود غير صحيح أو منتهي'**
+  String get errInvalidCode;
+
+  /// No description provided for @errNetwork.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش اتصال بالإنترنت'**
+  String get errNetwork;
+
+  /// No description provided for @errPasswordsMismatch.
+  ///
+  /// In ar, this message translates to:
+  /// **'كلمتا المرور غير متطابقتين'**
+  String get errPasswordsMismatch;
+
+  /// No description provided for @forgotTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسيت كلمة المرور؟'**
+  String get forgotTitle;
+
+  /// No description provided for @forgotSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل بريدك وهنبعتلك كود لإعادة التعيين'**
+  String get forgotSubtitle;
+
+  /// No description provided for @sendCode.
+  ///
+  /// In ar, this message translates to:
+  /// **'إرسال الكود'**
+  String get sendCode;
+
+  /// No description provided for @resetTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'إعادة تعيين كلمة المرور'**
+  String get resetTitle;
+
+  /// No description provided for @resetSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل الكود اللي وصلك على {email} وكلمة المرور الجديدة'**
+  String resetSubtitle(String email);
+
+  /// No description provided for @code.
+  ///
+  /// In ar, this message translates to:
+  /// **'الكود'**
+  String get code;
+
+  /// No description provided for @codeHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل الكود المكوّن من ٦ أرقام'**
+  String get codeHint;
+
+  /// No description provided for @newPassword.
+  ///
+  /// In ar, this message translates to:
+  /// **'كلمة المرور الجديدة'**
+  String get newPassword;
+
+  /// No description provided for @confirmPassword.
+  ///
+  /// In ar, this message translates to:
+  /// **'تأكيد كلمة المرور'**
+  String get confirmPassword;
+
+  /// No description provided for @savePassword.
+  ///
+  /// In ar, this message translates to:
+  /// **'حفظ كلمة المرور'**
+  String get savePassword;
+
+  /// No description provided for @backToLogin.
+  ///
+  /// In ar, this message translates to:
+  /// **'رجوع لتسجيل الدخول'**
+  String get backToLogin;
+
+  /// No description provided for @splashLanguage.
+  ///
+  /// In ar, this message translates to:
+  /// **'English'**
+  String get splashLanguage;
 }
 
 class _AppLocalizationsDelegate

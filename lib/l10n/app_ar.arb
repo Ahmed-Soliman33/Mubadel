@@ -38,5 +38,58 @@
         "type": "int"
       }
     }
-  }
+  },
+  "loginTitle": "تسجيل الدخول",
+  "loginSubtitle": "املأ البيانات لدخول حسابك",
+  "email": "البريد الإلكتروني",
+  "emailHint": "ادخل بريدك الإلكتروني",
+  "password": "كلمة المرور",
+  "passwordHint": "ادخل كلمة المرور",
+  "rememberMe": "تذكرني",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "loginButton": "تسجيل الدخول",
+  "noAccount": "إنشاء حساب جديد؟",
+  "signUpNow": "سجل دلوقتي",
+  "signupTitle": "إنشاء حساب جديد",
+  "signupSubtitle": "املأ البيانات لإنشاء حسابك الجديد",
+  "fullName": "الاسم بالكامل",
+  "fullNameHint": "ادخل اسمك بالكامل",
+  "phone": "رقم التليفون",
+  "phoneHint": "010xxxxxxxx",
+  "governorate": "المحافظة",
+  "selectGovernorate": "اختر المحافظة",
+  "address": "العنوان",
+  "addressHint": "ادخل عنوانك",
+  "createAccount": "إنشاء حساب",
+  "haveAccount": "عندك حساب؟",
+  "loginNow": "سجّل دخول",
+  "errEmailInvalid": "ادخل بريد إلكتروني صحيح",
+  "errPasswordShort": "كلمة المرور لازم تكون ٦ حروف على الأقل",
+  "errRequired": "الحقل ده مطلوب",
+  "errPhoneInvalid": "ادخل رقم موبايل مصري صحيح",
+  "errNameShort": "الاسم لازم يكون ٣ حروف على الأقل",
+  "errInvalidCredentials": "البريد أو كلمة المرور غير صحيحة",
+  "errEmailTaken": "البريد ده مسجّل قبل كده",
+  "errInvalidCode": "الكود غير صحيح أو منتهي",
+  "errNetwork": "مفيش اتصال بالإنترنت",
+  "errPasswordsMismatch": "كلمتا المرور غير متطابقتين",
+  "forgotTitle": "نسيت كلمة المرور؟",
+  "forgotSubtitle": "ادخل بريدك وهنبعتلك كود لإعادة التعيين",
+  "sendCode": "إرسال الكود",
+  "resetTitle": "إعادة تعيين كلمة المرور",
+  "resetSubtitle": "ادخل الكود اللي وصلك على {email} وكلمة المرور الجديدة",
+  "@resetSubtitle": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "code": "الكود",
+  "codeHint": "ادخل الكود المكوّن من ٦ أرقام",
+  "newPassword": "كلمة المرور الجديدة",
+  "confirmPassword": "تأكيد كلمة المرور",
+  "savePassword": "حفظ كلمة المرور",
+  "backToLogin": "رجوع لتسجيل الدخول",
+  "splashLanguage": "English"
 }
