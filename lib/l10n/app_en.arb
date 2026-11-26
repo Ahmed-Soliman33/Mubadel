@@ -1,0 +1,42 @@
+{
+  "@@locale": "en",
+  "appName": "Mubadel",
+  "tagline": "Your space to swap",
+  "slogan": "Let what you don''t need find a new owner",
+  "start": "Start",
+  "navHome": "Home",
+  "navFavorites": "Favorites",
+  "navAdd": "Add",
+  "navMessages": "Messages",
+  "navProfile": "Profile",
+  "retry": "Try again",
+  "errorGeneric": "Something went wrong, try again",
+  "emptyNoResults": "No results",
+  "loading": "Loading...",
+  "currencyEgp": "EGP",
+  "configMissingTitle": "Missing configuration",
+  "configMissingBody": "Supabase keys are missing. Add env.json to the project root and run with --dart-define-from-file=env.json",
+  "conditionNew": "New",
+  "conditionLikeNew": "Like new",
+  "conditionUsed": "Used",
+  "listingBoth": "Sell or swap",
+  "listingSwap": "Swap only",
+  "listingSale": "Sale only",
+  "priceSwap": "For swap",
+  "statusAvailable": "Available",
+  "statusReserved": "Reserved",
+  "statusSwapped": "Swapped",
+  "statusSold": "Sold",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "save": "Save",
+  "viewAll": "View all",
+  "ratingsCount": "({count} reviews)",
+  "@ratingsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}

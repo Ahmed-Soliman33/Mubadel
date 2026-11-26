@@ -1,0 +1,42 @@
+{
+  "@@locale": "ar",
+  "appName": "مُبدل",
+  "tagline": "مساحتك للتبديل",
+  "slogan": "خلّي اللي مش محتاجه يلاقي صاحب جديد",
+  "start": "ابدأ",
+  "navHome": "الرئيسية",
+  "navFavorites": "المفضلة",
+  "navAdd": "أضف",
+  "navMessages": "رسائلي",
+  "navProfile": "حسابي",
+  "retry": "حاول تاني",
+  "errorGeneric": "حصل خطأ، حاول تاني",
+  "emptyNoResults": "مفيش نتائج",
+  "loading": "جاري التحميل...",
+  "currencyEgp": "ج.م",
+  "configMissingTitle": "الإعدادات ناقصة",
+  "configMissingBody": "مفاتيح Supabase مش موجودة. أضف ملف env.json في جذر المشروع وشغّل التطبيق بـ --dart-define-from-file=env.json",
+  "conditionNew": "جديد",
+  "conditionLikeNew": "شبه جديد",
+  "conditionUsed": "مستعمل",
+  "listingBoth": "بيع أو تبديل",
+  "listingSwap": "للتبديل فقط",
+  "listingSale": "للبيع فقط",
+  "priceSwap": "للتبديل",
+  "statusAvailable": "متاح",
+  "statusReserved": "محجوز",
+  "statusSwapped": "تم التبديل",
+  "statusSold": "تم البيع",
+  "cancel": "إلغاء",
+  "confirm": "تأكيد",
+  "save": "حفظ",
+  "viewAll": "عرض الكل",
+  "ratingsCount": "({count} تقييم)",
+  "@ratingsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
