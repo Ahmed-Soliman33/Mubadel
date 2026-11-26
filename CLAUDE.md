@@ -2,47 +2,42 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Current state
+## What this is
 
-The repo contains `PRD.md` (written in Egyptian Arabic, ~770 lines) and a `design/` folder of Figma exports. There is no Flutter project or git history yet. `PRD.md` is the source of truth: it contains the full Supabase SQL script (§8.3), screen specs (§6), design tokens (§3) and the acceptance checklist (§11). Read the relevant section before building a feature.
+Mubadel (مُبدل): Flutter (Android + iOS) marketplace for swapping/selling used items in Egypt. Backend is Supabase (Auth, Postgres, Storage, Realtime). Arabic (default, RTL) + English (LTR). `PRD.md` (Egyptian Arabic) is the source of truth for scope, the full SQL schema/RLS/RPCs (§8.3), screen specs and the acceptance checklist (§11). `design/` holds the Figma exports (WhatsApp-named JPEGs; mapping to PRD §2 is by content: logo, splash, design system, login, signup, home, details, make-offer, add-product, profile, chat).
 
-The files in `design/` are WhatsApp-named JPEGs (`WhatsApp Image 2026-11-26 at 1.50.4x AM (n).jpeg`), not the `00_logo.jpg` … `10_chat.jpg` names the PRD §2 assumes. Open the images to identify which screen each is before mapping them. Follow them pixel-for-pixel for anything the PRD doesn't specify, and copy the logo to `assets/images/logo.png` (as PNG) when scaffolding.
+## Commands
 
-## What Mubadel is
-
-Flutter (Android + iOS) marketplace app for swapping/selling used items in Egypt. Backend is Supabase (Auth, Postgres, Storage, Realtime). Single user type (every user is buyer and seller). Arabic (default, RTL) and English (LTR). Currency EGP. Out of scope (Phase 2): online payments, push notifications, chat images, admin dashboard, counter-offers, blocking/reporting (PRD §9).
-
-## Commands (once the project is scaffolded)
-
-Config is supplied via `env.json` at the project root (git-ignored) containing `SUPABASE_URL` and `SUPABASE_ANON_KEY`, read via `--dart-define-from-file`. Never use or commit the `service_role` key.
+Config comes from `env.json` (git-ignored; copy `env.example.json`) via `--dart-define-from-file`. Without it the app shows `ConfigErrorScreen`.
 
 ```
 flutter run --dart-define-from-file=env.json
-flutter build apk --release --dart-define-from-file=env.json
-flutter analyze            # must pass with no errors
-flutter gen-l10n           # regenerate after editing lib/l10n/app_ar.arb / app_en.arb
-flutter test test/path_test.dart   # single test file
+flutter build apk --release --dart-define-from-file=env.json   # keys are baked in at build time
+flutter analyze                       # must stay at zero issues
+flutter gen-l10n                      # after changing lib/l10n/*.arb
+flutter test                          # smoke test only
+flutter test test/path_test.dart      # single file
+PREVIEW=1 flutter test test/preview --update-goldens   # renders every screen (ar+en, fake data) to test/preview/out/*.png
+W=360 PREVIEW=1 flutter test test/preview --update-goldens   # same at another width; fails on any RenderFlex overflow
 ```
+
+Gradle needs JDK 17 (JDK 25 breaks it): `flutter config --jdk-dir=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home`. First Android build downloads SDK/NDK/CMake and takes ~25 min.
 
 ## Architecture
 
-- Stack: `flutter_riverpod` (state), `go_router` (a `ShellRoute` hosts the 5-tab bottom nav: home, favorites, add, messages, profile; everything else is a stack route without bottom nav), `supabase_flutter`, gen-l10n, `google_fonts` (Cairo), `image_picker` + `flutter_image_compress`.
-- Layout: `lib/core/` (config/env, theme, router, shared widgets, formatters) plus `lib/features/<auth|home|products|offers|chat|favorites|profile>/` each split into `data/` and `presentation/`.
-- Auth guard: any non-auth route without a session redirects to `/login`. Splash skips to Home if a session exists. "Remember me" unchecked means `signOut` on next app launch.
-
-### Offer lifecycle (core domain logic, lives in Postgres)
-
-`pending → accepted → completed`, with `rejected` / `cancelled` branches. Accepting reserves the involved products, auto-rejects competing pending offers on them, and creates or links a conversation. Completing marks products `swapped`/`sold` and increments `swaps_count`. Cancelling an accepted offer returns products to `available`. Chat, call button, banners and the review prompt are all driven by the linked offer's status.
+- Riverpod (`Notifier`/`FutureProvider`/`StreamProvider`), go_router, `supabase_flutter`. `lib/core/` = config, theme, router, shared widgets, formatters. `lib/features/<auth|home|products|offers|chat|favorites|profile>/{data,presentation}`: `data` has models + a `*Repository` (all Supabase calls) + providers; screens only talk to providers.
+- Router (`core/router/app_router.dart`): auth guard via `redirect` + `refreshListenable` on `onAuthStateChange`. A `ShellRoute` hosts the 5-tab bottom nav (`/home /favorites /add /messages /profile`); product/offer/chat/user/settings are stack routes without the nav. Splash handles auto-login and "remember me" (unchecked → `signOut` on next launch).
+- Realtime pattern: list providers call `refreshOnTableChange(ref, table, channelName)` (`offers/data/offer_providers.dart`) which subscribes to Postgres changes and `invalidateSelf()`s. Chat messages use `supabase.from('messages').stream(...)` so `read_at` updates also flow (✓✓). The nav badge = unread messages + pending incoming offers (`chat/data/unread_badge_provider.dart`).
+- Offer lifecycle (`pending → accepted → completed`, plus rejected/cancelled) lives in Postgres RPCs; chat banners, call button and the review prompt are all driven by the linked offer's status.
+- Strings: `lib/l10n/app_ar.arb` is the template, `app_en.arb` the translation; access via `context.l10n` (`core/utils/l10n_labels.dart`, which also has enum label extensions). No hard-coded user-facing strings.
+- Fonts: Cairo is bundled in `assets/google_fonts/` and `GoogleFonts.config.allowRuntimeFetching = false`, so file names must match google_fonts' `Cairo-<Weight>.ttf` convention.
 
 ## Rules that are easy to get wrong
 
-- **Never `select('*')` on `profiles`.** Column-level grants hide `phone` and `address` from the public. Select only the granted columns (`id, full_name, city, avatar_url, is_verified, rating_avg, rating_count, swaps_count, created_at`). Use RPC `get_my_profile` for the user's own full profile and `get_peer_phone(conversation_id)` for the counterpart's phone (only works after accepted/completed).
-- **Offer state changes go only through RPCs** (`accept_offer`, `reject_offer`, `cancel_offer`, `complete_offer`), never direct updates. Offers are *inserted* directly (RLS validates ownership and availability). Conversations are created only via RPC (`start_conversation`, `accept_offer`). Unread state uses `mark_conversation_read`.
-- Offer `cash_amount` means the sender's extra cash for swaps, and the product price for buy requests.
-- Image upload: compress to 1280px width at quality 75; storage path must be `{auth.uid}/{uuid}.jpg` (storage RLS checks the first folder equals the uid). Buckets: `product-images`, `avatars`. Max 6 images per product, the first is the cover.
-- Use directional APIs everywhere (`EdgeInsetsDirectional`, `AlignmentDirectional`); mirror arrow icons by direction. Must have no overflow at 360px in both RTL and LTR.
-- Every screen needs loading, empty, and error (with retry) states; lists need pull-to-refresh.
-- Unified listing-type labels: `both` = "بيع أو تبديل", `swap` = "للتبديل فقط", `sale` = "للبيع فقط".
-- Number formatting: Arabic uses Hindi digits via `NumberFormat.decimalPattern('ar_EG')` with "ج.م"; English uses `EGP 12,500`.
-- PRD §3 lists deliberate corrections to the Figma designs (forgot-password link is green, signup button reads "سجّل دخول", no video icon in chat header, offer screen has no bottom nav). Apply them.
-- Supabase dashboard setup (PRD §8.1): email provider on, "Confirm email" off, min password length 6, and the Reset Password email template must show `{{ .Token }}` (the app uses an OTP flow via `verifyOTP(type: OtpType.recovery)`, not a link).
+- **Never `select('*')` on `profiles`** (column grants hide `phone`/`address`). Use `ProfileLite.columns`; own full profile via RPC `get_my_profile`, peer phone via `get_peer_phone`.
+- **Offer state changes only through RPCs** (`accept_offer`, `reject_offer`, `cancel_offer`, `complete_offer`). Offers are inserted directly (RLS validates); conversations are created only by RPC (`start_conversation`, `accept_offer`).
+- Image upload: compress to 1280px/q75, path `{auth.uid}/{uuid}.jpg`, buckets `product-images` and `avatars` (`ProductRepository.uploadImage`). Max 6 images per product.
+- Use directional APIs (`EdgeInsetsDirectional`, `AlignmentDirectional`, `PositionedDirectional`). The back button is deliberately on the physical left in both locales (`PageHeader`, chat header).
+- Unified listing labels: `both` = "بيع أو تبديل", `swap` = "للتبديل فقط", `sale` = "للبيع فقط".
+- Android release needs `INTERNET` in the main manifest (the Flutter template only adds it for debug); already added.
+- The preview harness overrides repositories/providers with fakes and a `SupabaseClient` created with `autoRefreshToken: false` (otherwise a pending timer fails the test). Providers that open realtime channels must be overridden there.
