@@ -76,6 +76,15 @@ class OfferRepository {
         if (note != null && note.trim().isNotEmpty) 'note': note.trim(),
       });
 
+  Future<String?> conversationIdForOffer(String offerId) async {
+    final rows = await _client
+        .from('conversations')
+        .select('id')
+        .eq('offer_id', offerId)
+        .limit(1);
+    return rows.isEmpty ? null : rows.first['id'] as String;
+  }
+
   // State changes: RPC only.
   Future<String> accept(String offerId) async {
     final id = await _client.rpc('accept_offer', params: {'p_offer_id': offerId});

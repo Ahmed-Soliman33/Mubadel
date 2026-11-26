@@ -455,4 +455,126 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get buyRequestSent => 'تم إرسال طلب الشراء';
+
+  @override
+  String get makeOfferTitle => 'اعرض تبديل';
+
+  @override
+  String get makeOfferSubtitle => 'اختار حاجة من عندك مقابل المنتج';
+
+  @override
+  String get requestedProduct => 'المنتج المطلوب';
+
+  @override
+  String byOwner(String name, String city) {
+    return 'بواسطة $name · $city';
+  }
+
+  @override
+  String byOwnerNoCity(String name) {
+    return 'بواسطة $name';
+  }
+
+  @override
+  String get chooseYourProduct => 'اختار منتجك اللي هتعرضه';
+
+  @override
+  String get noProductsToOffer => 'مفيش عندك منتجات متاحة';
+
+  @override
+  String get noProductsToOfferHint => 'أضف منتج الأول عشان تقدر تعرضه للتبديل';
+
+  @override
+  String get addProduct => 'أضف منتج';
+
+  @override
+  String get cashDiff => 'فرق نقدي (اختياري)';
+
+  @override
+  String get cashDiffHint => 'مثال: هدفع ٢,٥٠٠ ج.م زيادة';
+
+  @override
+  String get cashDiffNote => 'الفرق النهائي بيتحدد بالاتفاق بين الطرفين.';
+
+  @override
+  String get sendSwapOffer => 'إرسال عرض التبديل';
+
+  @override
+  String get swapOfferSent => 'تم إرسال عرض التبديل';
+
+  @override
+  String get errSelectProduct => 'اختار منتج للتبديل';
+
+  @override
+  String get messagesTitle => 'رسائلي';
+
+  @override
+  String get messagesSubtitle => 'محادثاتك وعروضك في مكان واحد';
+
+  @override
+  String get tabConversations => 'المحادثات';
+
+  @override
+  String get tabOffers => 'العروض';
+
+  @override
+  String get offersIncoming => 'واردة';
+
+  @override
+  String get offersOutgoing => 'صادرة';
+
+  @override
+  String get accept => 'قبول';
+
+  @override
+  String get reject => 'رفض';
+
+  @override
+  String get cancelOffer => 'إلغاء العرض';
+
+  @override
+  String get openChat => 'فتح المحادثة';
+
+  @override
+  String get offerBuyLabel => 'شراء';
+
+  @override
+  String offerCash(String amount) {
+    return 'فرق نقدي: $amount';
+  }
+
+  @override
+  String offerWith(String name) {
+    return 'مع $name';
+  }
+
+  @override
+  String get offerStatusPending => 'قيد الانتظار';
+
+  @override
+  String get offerStatusAccepted => 'تم القبول';
+
+  @override
+  String get offerStatusRejected => 'مرفوض';
+
+  @override
+  String get offerStatusCancelled => 'ملغي';
+
+  @override
+  String get offerStatusCompleted => 'تمت الصفقة';
+
+  @override
+  String get noIncomingOffers => 'مفيش عروض واردة';
+
+  @override
+  String get noOutgoingOffers => 'مفيش عروض صادرة';
+
+  @override
+  String get offerAccepted => 'تم قبول العرض';
+
+  @override
+  String get offerRejected => 'تم رفض العرض';
+
+  @override
+  String get offerCancelled => 'تم إلغاء العرض';
 }

@@ -979,6 +979,234 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'تم إرسال طلب الشراء'**
   String get buyRequestSent;
+
+  /// No description provided for @makeOfferTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'اعرض تبديل'**
+  String get makeOfferTitle;
+
+  /// No description provided for @makeOfferSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختار حاجة من عندك مقابل المنتج'**
+  String get makeOfferSubtitle;
+
+  /// No description provided for @requestedProduct.
+  ///
+  /// In ar, this message translates to:
+  /// **'المنتج المطلوب'**
+  String get requestedProduct;
+
+  /// No description provided for @byOwner.
+  ///
+  /// In ar, this message translates to:
+  /// **'بواسطة {name} · {city}'**
+  String byOwner(String name, String city);
+
+  /// No description provided for @byOwnerNoCity.
+  ///
+  /// In ar, this message translates to:
+  /// **'بواسطة {name}'**
+  String byOwnerNoCity(String name);
+
+  /// No description provided for @chooseYourProduct.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختار منتجك اللي هتعرضه'**
+  String get chooseYourProduct;
+
+  /// No description provided for @noProductsToOffer.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش عندك منتجات متاحة'**
+  String get noProductsToOffer;
+
+  /// No description provided for @noProductsToOfferHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'أضف منتج الأول عشان تقدر تعرضه للتبديل'**
+  String get noProductsToOfferHint;
+
+  /// No description provided for @addProduct.
+  ///
+  /// In ar, this message translates to:
+  /// **'أضف منتج'**
+  String get addProduct;
+
+  /// No description provided for @cashDiff.
+  ///
+  /// In ar, this message translates to:
+  /// **'فرق نقدي (اختياري)'**
+  String get cashDiff;
+
+  /// No description provided for @cashDiffHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'مثال: هدفع ٢,٥٠٠ ج.م زيادة'**
+  String get cashDiffHint;
+
+  /// No description provided for @cashDiffNote.
+  ///
+  /// In ar, this message translates to:
+  /// **'الفرق النهائي بيتحدد بالاتفاق بين الطرفين.'**
+  String get cashDiffNote;
+
+  /// No description provided for @sendSwapOffer.
+  ///
+  /// In ar, this message translates to:
+  /// **'إرسال عرض التبديل'**
+  String get sendSwapOffer;
+
+  /// No description provided for @swapOfferSent.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم إرسال عرض التبديل'**
+  String get swapOfferSent;
+
+  /// No description provided for @errSelectProduct.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختار منتج للتبديل'**
+  String get errSelectProduct;
+
+  /// No description provided for @messagesTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'رسائلي'**
+  String get messagesTitle;
+
+  /// No description provided for @messagesSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'محادثاتك وعروضك في مكان واحد'**
+  String get messagesSubtitle;
+
+  /// No description provided for @tabConversations.
+  ///
+  /// In ar, this message translates to:
+  /// **'المحادثات'**
+  String get tabConversations;
+
+  /// No description provided for @tabOffers.
+  ///
+  /// In ar, this message translates to:
+  /// **'العروض'**
+  String get tabOffers;
+
+  /// No description provided for @offersIncoming.
+  ///
+  /// In ar, this message translates to:
+  /// **'واردة'**
+  String get offersIncoming;
+
+  /// No description provided for @offersOutgoing.
+  ///
+  /// In ar, this message translates to:
+  /// **'صادرة'**
+  String get offersOutgoing;
+
+  /// No description provided for @accept.
+  ///
+  /// In ar, this message translates to:
+  /// **'قبول'**
+  String get accept;
+
+  /// No description provided for @reject.
+  ///
+  /// In ar, this message translates to:
+  /// **'رفض'**
+  String get reject;
+
+  /// No description provided for @cancelOffer.
+  ///
+  /// In ar, this message translates to:
+  /// **'إلغاء العرض'**
+  String get cancelOffer;
+
+  /// No description provided for @openChat.
+  ///
+  /// In ar, this message translates to:
+  /// **'فتح المحادثة'**
+  String get openChat;
+
+  /// No description provided for @offerBuyLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'شراء'**
+  String get offerBuyLabel;
+
+  /// No description provided for @offerCash.
+  ///
+  /// In ar, this message translates to:
+  /// **'فرق نقدي: {amount}'**
+  String offerCash(String amount);
+
+  /// No description provided for @offerWith.
+  ///
+  /// In ar, this message translates to:
+  /// **'مع {name}'**
+  String offerWith(String name);
+
+  /// No description provided for @offerStatusPending.
+  ///
+  /// In ar, this message translates to:
+  /// **'قيد الانتظار'**
+  String get offerStatusPending;
+
+  /// No description provided for @offerStatusAccepted.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم القبول'**
+  String get offerStatusAccepted;
+
+  /// No description provided for @offerStatusRejected.
+  ///
+  /// In ar, this message translates to:
+  /// **'مرفوض'**
+  String get offerStatusRejected;
+
+  /// No description provided for @offerStatusCancelled.
+  ///
+  /// In ar, this message translates to:
+  /// **'ملغي'**
+  String get offerStatusCancelled;
+
+  /// No description provided for @offerStatusCompleted.
+  ///
+  /// In ar, this message translates to:
+  /// **'تمت الصفقة'**
+  String get offerStatusCompleted;
+
+  /// No description provided for @noIncomingOffers.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش عروض واردة'**
+  String get noIncomingOffers;
+
+  /// No description provided for @noOutgoingOffers.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش عروض صادرة'**
+  String get noOutgoingOffers;
+
+  /// No description provided for @offerAccepted.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم قبول العرض'**
+  String get offerAccepted;
+
+  /// No description provided for @offerRejected.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم رفض العرض'**
+  String get offerRejected;
+
+  /// No description provided for @offerCancelled.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم إلغاء العرض'**
+  String get offerCancelled;
 }
 
 class _AppLocalizationsDelegate

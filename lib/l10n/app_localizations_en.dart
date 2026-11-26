@@ -459,4 +459,127 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get buyRequestSent => 'Buy request sent';
+
+  @override
+  String get makeOfferTitle => 'Offer a swap';
+
+  @override
+  String get makeOfferSubtitle => 'Pick one of your items in exchange';
+
+  @override
+  String get requestedProduct => 'Requested product';
+
+  @override
+  String byOwner(String name, String city) {
+    return 'By $name · $city';
+  }
+
+  @override
+  String byOwnerNoCity(String name) {
+    return 'By $name';
+  }
+
+  @override
+  String get chooseYourProduct => 'Choose the item you\'\'ll offer';
+
+  @override
+  String get noProductsToOffer => 'You have no available products';
+
+  @override
+  String get noProductsToOfferHint => 'Add a product first so you can offer it';
+
+  @override
+  String get addProduct => 'Add product';
+
+  @override
+  String get cashDiff => 'Cash difference (optional)';
+
+  @override
+  String get cashDiffHint => 'e.g. I\'\'ll add EGP 2,500';
+
+  @override
+  String get cashDiffNote =>
+      'The final difference is agreed between both parties.';
+
+  @override
+  String get sendSwapOffer => 'Send swap offer';
+
+  @override
+  String get swapOfferSent => 'Swap offer sent';
+
+  @override
+  String get errSelectProduct => 'Choose a product to swap';
+
+  @override
+  String get messagesTitle => 'Messages';
+
+  @override
+  String get messagesSubtitle => 'Your chats and offers in one place';
+
+  @override
+  String get tabConversations => 'Chats';
+
+  @override
+  String get tabOffers => 'Offers';
+
+  @override
+  String get offersIncoming => 'Incoming';
+
+  @override
+  String get offersOutgoing => 'Outgoing';
+
+  @override
+  String get accept => 'Accept';
+
+  @override
+  String get reject => 'Reject';
+
+  @override
+  String get cancelOffer => 'Cancel offer';
+
+  @override
+  String get openChat => 'Open chat';
+
+  @override
+  String get offerBuyLabel => 'Buy';
+
+  @override
+  String offerCash(String amount) {
+    return 'Cash difference: $amount';
+  }
+
+  @override
+  String offerWith(String name) {
+    return 'With $name';
+  }
+
+  @override
+  String get offerStatusPending => 'Pending';
+
+  @override
+  String get offerStatusAccepted => 'Accepted';
+
+  @override
+  String get offerStatusRejected => 'Rejected';
+
+  @override
+  String get offerStatusCancelled => 'Cancelled';
+
+  @override
+  String get offerStatusCompleted => 'Completed';
+
+  @override
+  String get noIncomingOffers => 'No incoming offers';
+
+  @override
+  String get noOutgoingOffers => 'No outgoing offers';
+
+  @override
+  String get offerAccepted => 'Offer accepted';
+
+  @override
+  String get offerRejected => 'Offer rejected';
+
+  @override
+  String get offerCancelled => 'Offer cancelled';
 }

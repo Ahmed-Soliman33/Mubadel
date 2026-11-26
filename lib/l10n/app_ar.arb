@@ -167,5 +167,74 @@
   "noteOptional": "ملاحظة (اختياري)",
   "noteHint": "اكتب ملاحظتك للبائع",
   "sendBuyRequest": "إرسال طلب الشراء",
-  "buyRequestSent": "تم إرسال طلب الشراء"
+  "buyRequestSent": "تم إرسال طلب الشراء",
+  "makeOfferTitle": "اعرض تبديل",
+  "makeOfferSubtitle": "اختار حاجة من عندك مقابل المنتج",
+  "requestedProduct": "المنتج المطلوب",
+  "byOwner": "بواسطة {name} · {city}",
+  "@byOwner": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "byOwnerNoCity": "بواسطة {name}",
+  "@byOwnerNoCity": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chooseYourProduct": "اختار منتجك اللي هتعرضه",
+  "noProductsToOffer": "مفيش عندك منتجات متاحة",
+  "noProductsToOfferHint": "أضف منتج الأول عشان تقدر تعرضه للتبديل",
+  "addProduct": "أضف منتج",
+  "cashDiff": "فرق نقدي (اختياري)",
+  "cashDiffHint": "مثال: هدفع ٢,٥٠٠ ج.م زيادة",
+  "cashDiffNote": "الفرق النهائي بيتحدد بالاتفاق بين الطرفين.",
+  "sendSwapOffer": "إرسال عرض التبديل",
+  "swapOfferSent": "تم إرسال عرض التبديل",
+  "errSelectProduct": "اختار منتج للتبديل",
+  "messagesTitle": "رسائلي",
+  "messagesSubtitle": "محادثاتك وعروضك في مكان واحد",
+  "tabConversations": "المحادثات",
+  "tabOffers": "العروض",
+  "offersIncoming": "واردة",
+  "offersOutgoing": "صادرة",
+  "accept": "قبول",
+  "reject": "رفض",
+  "cancelOffer": "إلغاء العرض",
+  "openChat": "فتح المحادثة",
+  "offerBuyLabel": "شراء",
+  "offerCash": "فرق نقدي: {amount}",
+  "@offerCash": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "offerWith": "مع {name}",
+  "@offerWith": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "offerStatusPending": "قيد الانتظار",
+  "offerStatusAccepted": "تم القبول",
+  "offerStatusRejected": "مرفوض",
+  "offerStatusCancelled": "ملغي",
+  "offerStatusCompleted": "تمت الصفقة",
+  "noIncomingOffers": "مفيش عروض واردة",
+  "noOutgoingOffers": "مفيش عروض صادرة",
+  "offerAccepted": "تم قبول العرض",
+  "offerRejected": "تم رفض العرض",
+  "offerCancelled": "تم إلغاء العرض"
 }

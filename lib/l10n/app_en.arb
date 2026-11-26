@@ -167,5 +167,74 @@
   "noteOptional": "Note (optional)",
   "noteHint": "Write a note to the seller",
   "sendBuyRequest": "Send buy request",
-  "buyRequestSent": "Buy request sent"
+  "buyRequestSent": "Buy request sent",
+  "makeOfferTitle": "Offer a swap",
+  "makeOfferSubtitle": "Pick one of your items in exchange",
+  "requestedProduct": "Requested product",
+  "byOwner": "By {name} · {city}",
+  "@byOwner": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "byOwnerNoCity": "By {name}",
+  "@byOwnerNoCity": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chooseYourProduct": "Choose the item you''ll offer",
+  "noProductsToOffer": "You have no available products",
+  "noProductsToOfferHint": "Add a product first so you can offer it",
+  "addProduct": "Add product",
+  "cashDiff": "Cash difference (optional)",
+  "cashDiffHint": "e.g. I''ll add EGP 2,500",
+  "cashDiffNote": "The final difference is agreed between both parties.",
+  "sendSwapOffer": "Send swap offer",
+  "swapOfferSent": "Swap offer sent",
+  "errSelectProduct": "Choose a product to swap",
+  "messagesTitle": "Messages",
+  "messagesSubtitle": "Your chats and offers in one place",
+  "tabConversations": "Chats",
+  "tabOffers": "Offers",
+  "offersIncoming": "Incoming",
+  "offersOutgoing": "Outgoing",
+  "accept": "Accept",
+  "reject": "Reject",
+  "cancelOffer": "Cancel offer",
+  "openChat": "Open chat",
+  "offerBuyLabel": "Buy",
+  "offerCash": "Cash difference: {amount}",
+  "@offerCash": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "offerWith": "With {name}",
+  "@offerWith": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "offerStatusPending": "Pending",
+  "offerStatusAccepted": "Accepted",
+  "offerStatusRejected": "Rejected",
+  "offerStatusCancelled": "Cancelled",
+  "offerStatusCompleted": "Completed",
+  "noIncomingOffers": "No incoming offers",
+  "noOutgoingOffers": "No outgoing offers",
+  "offerAccepted": "Offer accepted",
+  "offerRejected": "Offer rejected",
+  "offerCancelled": "Offer cancelled"
 }

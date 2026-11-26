@@ -1,5 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-/// Unread messages + pending incoming offers, shown on the "رسائلي" tab.
-/// Wired to Supabase in the Chat phase.
-final messagesBadgeProvider = Provider<int>((ref) => 0);
+import '../../offers/data/offer_providers.dart';
+
+/// Pending incoming offers + unread chat messages, shown on the "رسائلي" tab.
+final messagesBadgeProvider = Provider<int>((ref) {
+  return ref.watch(pendingIncomingCountProvider);
+});

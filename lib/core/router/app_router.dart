@@ -15,6 +15,8 @@ import '../../features/home/presentation/home_screen.dart';
 import '../../features/products/presentation/product_details_screen.dart';
 import '../../features/products/presentation/product_form_screen.dart';
 import '../../features/products/presentation/search_screen.dart';
+import '../../features/chat/presentation/messages_screen.dart';
+import '../../features/offers/presentation/make_offer_screen.dart';
 import '../widgets/placeholder_screen.dart';
 import 'main_shell.dart';
 
@@ -107,8 +109,7 @@ final routerProvider = Provider<GoRouter>((ref) {
                   const NoTransitionPage(child: ProductFormScreen())),
           GoRoute(
               path: AppRoutes.messages,
-              pageBuilder: (_, _) => const NoTransitionPage(
-                  child: PlaceholderScreen('messages'))),
+              pageBuilder: (_, _) => const NoTransitionPage(child: MessagesScreen())),
           GoRoute(
               path: AppRoutes.profile,
               pageBuilder: (_, _) => const NoTransitionPage(
@@ -126,7 +127,8 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ProductEditScreen(productId: s.pathParameters['id']!)),
           GoRoute(
               path: 'offer',
-              builder: (_, s) => PlaceholderScreen('offer')),
+              builder: (_, s) =>
+                  MakeOfferScreen(productId: s.pathParameters['id']!)),
         ],
       ),
       GoRoute(
