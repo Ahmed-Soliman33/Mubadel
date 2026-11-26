@@ -287,8 +287,8 @@ abstract class AppLocalizations {
   /// No description provided for @ratingsCount.
   ///
   /// In ar, this message translates to:
-  /// **'({count} تقييم)'**
-  String ratingsCount(int count);
+  /// **'({num} تقييم)'**
+  String ratingsCount(String num);
 
   /// No description provided for @loginTitle.
   ///
@@ -565,6 +565,420 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'English'**
   String get splashLanguage;
+
+  /// No description provided for @searchHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'بتدور على إيه النهارده؟'**
+  String get searchHint;
+
+  /// No description provided for @bannerText.
+  ///
+  /// In ar, this message translates to:
+  /// **'اللي مش محتاجه .. ممكن يكون كنز لحد تاني'**
+  String get bannerText;
+
+  /// No description provided for @bannerButton.
+  ///
+  /// In ar, this message translates to:
+  /// **'ابدأ التبديل'**
+  String get bannerButton;
+
+  /// No description provided for @browseCategories.
+  ///
+  /// In ar, this message translates to:
+  /// **'تصفّح الأقسام'**
+  String get browseCategories;
+
+  /// No description provided for @featured.
+  ///
+  /// In ar, this message translates to:
+  /// **'لقطات ممكن تعجبك'**
+  String get featured;
+
+  /// No description provided for @searchTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'بحث'**
+  String get searchTitle;
+
+  /// No description provided for @filterCategory.
+  ///
+  /// In ar, this message translates to:
+  /// **'القسم'**
+  String get filterCategory;
+
+  /// No description provided for @filterType.
+  ///
+  /// In ar, this message translates to:
+  /// **'النوع'**
+  String get filterType;
+
+  /// No description provided for @filterCondition.
+  ///
+  /// In ar, this message translates to:
+  /// **'الحالة'**
+  String get filterCondition;
+
+  /// No description provided for @filterAll.
+  ///
+  /// In ar, this message translates to:
+  /// **'الكل'**
+  String get filterAll;
+
+  /// No description provided for @filterSale.
+  ///
+  /// In ar, this message translates to:
+  /// **'بيع'**
+  String get filterSale;
+
+  /// No description provided for @filterSwap.
+  ///
+  /// In ar, this message translates to:
+  /// **'تبديل'**
+  String get filterSwap;
+
+  /// No description provided for @productDetailsTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'تفاصيل المنتج'**
+  String get productDetailsTitle;
+
+  /// No description provided for @productDetailsSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'راجع التفاصيل قبل ما تبعت عرض'**
+  String get productDetailsSubtitle;
+
+  /// No description provided for @ownerSection.
+  ///
+  /// In ar, this message translates to:
+  /// **'صاحب المنتج'**
+  String get ownerSection;
+
+  /// No description provided for @memberSince.
+  ///
+  /// In ar, this message translates to:
+  /// **'عضو من {year}'**
+  String memberSince(String year);
+
+  /// No description provided for @makeOffer.
+  ///
+  /// In ar, this message translates to:
+  /// **'اعرض تبديل'**
+  String get makeOffer;
+
+  /// No description provided for @buy.
+  ///
+  /// In ar, this message translates to:
+  /// **'اشتري'**
+  String get buy;
+
+  /// No description provided for @messageSeller.
+  ///
+  /// In ar, this message translates to:
+  /// **'راسل البائع'**
+  String get messageSeller;
+
+  /// No description provided for @edit.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعديل'**
+  String get edit;
+
+  /// No description provided for @delete.
+  ///
+  /// In ar, this message translates to:
+  /// **'حذف'**
+  String get delete;
+
+  /// No description provided for @deleteConfirmTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'حذف المنتج'**
+  String get deleteConfirmTitle;
+
+  /// No description provided for @deleteConfirmBody.
+  ///
+  /// In ar, this message translates to:
+  /// **'متأكد إنك عايز تحذف المنتج ده؟'**
+  String get deleteConfirmBody;
+
+  /// No description provided for @productUnavailable.
+  ///
+  /// In ar, this message translates to:
+  /// **'المنتج غير متاح حاليًا'**
+  String get productUnavailable;
+
+  /// No description provided for @offerSent.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم إرسال عرضك'**
+  String get offerSent;
+
+  /// No description provided for @categoryLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'القسم'**
+  String get categoryLabel;
+
+  /// No description provided for @conditionLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'الحالة'**
+  String get conditionLabel;
+
+  /// No description provided for @addProductTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'أضف منتجك'**
+  String get addProductTitle;
+
+  /// No description provided for @addProductSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'خلّي حاجتك تلاقي استخدام جديد'**
+  String get addProductSubtitle;
+
+  /// No description provided for @editProductTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعديل المنتج'**
+  String get editProductTitle;
+
+  /// No description provided for @productImages.
+  ///
+  /// In ar, this message translates to:
+  /// **'صور المنتج'**
+  String get productImages;
+
+  /// No description provided for @addImages.
+  ///
+  /// In ar, this message translates to:
+  /// **'أضف صور'**
+  String get addImages;
+
+  /// No description provided for @photoTip.
+  ///
+  /// In ar, this message translates to:
+  /// **'صوّر المنتج في إضاءة كويسة'**
+  String get photoTip;
+
+  /// No description provided for @productData.
+  ///
+  /// In ar, this message translates to:
+  /// **'بيانات المنتج'**
+  String get productData;
+
+  /// No description provided for @productName.
+  ///
+  /// In ar, this message translates to:
+  /// **'اسم المنتج'**
+  String get productName;
+
+  /// No description provided for @productNameHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'مثال: موبايل سامسونج A54'**
+  String get productNameHint;
+
+  /// No description provided for @descriptionLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'الوصف'**
+  String get descriptionLabel;
+
+  /// No description provided for @descriptionHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'اكتب وصف المنتج وحالته'**
+  String get descriptionHint;
+
+  /// No description provided for @selectCategory.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر القسم'**
+  String get selectCategory;
+
+  /// No description provided for @productCondition.
+  ///
+  /// In ar, this message translates to:
+  /// **'حالة المنتج'**
+  String get productCondition;
+
+  /// No description provided for @howToList.
+  ///
+  /// In ar, this message translates to:
+  /// **'عايز تعرضه إزاي؟'**
+  String get howToList;
+
+  /// No description provided for @priceLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'السعر المطلوب (جنيه)'**
+  String get priceLabel;
+
+  /// No description provided for @priceHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'مثال: ٥٠٠'**
+  String get priceHint;
+
+  /// No description provided for @publish.
+  ///
+  /// In ar, this message translates to:
+  /// **'انشر المنتج'**
+  String get publish;
+
+  /// No description provided for @saveChanges.
+  ///
+  /// In ar, this message translates to:
+  /// **'حفظ التعديلات'**
+  String get saveChanges;
+
+  /// No description provided for @errImagesRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'أضف صورة واحدة على الأقل'**
+  String get errImagesRequired;
+
+  /// No description provided for @errCategoryRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر القسم'**
+  String get errCategoryRequired;
+
+  /// No description provided for @errPriceRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادخل السعر'**
+  String get errPriceRequired;
+
+  /// No description provided for @errConditionRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر حالة المنتج'**
+  String get errConditionRequired;
+
+  /// No description provided for @maxImages.
+  ///
+  /// In ar, this message translates to:
+  /// **'الحد الأقصى ٦ صور'**
+  String get maxImages;
+
+  /// No description provided for @coverLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'الغلاف'**
+  String get coverLabel;
+
+  /// No description provided for @camera.
+  ///
+  /// In ar, this message translates to:
+  /// **'الكاميرا'**
+  String get camera;
+
+  /// No description provided for @gallery.
+  ///
+  /// In ar, this message translates to:
+  /// **'المعرض'**
+  String get gallery;
+
+  /// No description provided for @productPublished.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم نشر المنتج'**
+  String get productPublished;
+
+  /// No description provided for @productSaved.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم حفظ التعديلات'**
+  String get productSaved;
+
+  /// No description provided for @productDeleted.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم حذف المنتج'**
+  String get productDeleted;
+
+  /// No description provided for @listingSaleShort.
+  ///
+  /// In ar, this message translates to:
+  /// **'للبيع'**
+  String get listingSaleShort;
+
+  /// No description provided for @listingSwapShort.
+  ///
+  /// In ar, this message translates to:
+  /// **'للتبديل'**
+  String get listingSwapShort;
+
+  /// No description provided for @favoritesTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'المفضلة'**
+  String get favoritesTitle;
+
+  /// No description provided for @favoritesSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'المنتجات اللي حفظتها'**
+  String get favoritesSubtitle;
+
+  /// No description provided for @noFavorites.
+  ///
+  /// In ar, this message translates to:
+  /// **'لسه مفيش حاجة في المفضلة'**
+  String get noFavorites;
+
+  /// No description provided for @noFavoritesHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'اضغط على القلب لحفظ المنتجات'**
+  String get noFavoritesHint;
+
+  /// No description provided for @noProducts.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش منتجات'**
+  String get noProducts;
+
+  /// No description provided for @buyRequestTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'طلب شراء'**
+  String get buyRequestTitle;
+
+  /// No description provided for @cashOnDelivery.
+  ///
+  /// In ar, this message translates to:
+  /// **'الدفع عند الاستلام'**
+  String get cashOnDelivery;
+
+  /// No description provided for @noteOptional.
+  ///
+  /// In ar, this message translates to:
+  /// **'ملاحظة (اختياري)'**
+  String get noteOptional;
+
+  /// No description provided for @noteHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'اكتب ملاحظتك للبائع'**
+  String get noteHint;
+
+  /// No description provided for @sendBuyRequest.
+  ///
+  /// In ar, this message translates to:
+  /// **'إرسال طلب الشراء'**
+  String get sendBuyRequest;
+
+  /// No description provided for @buyRequestSent.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم إرسال طلب الشراء'**
+  String get buyRequestSent;
 }
 
 class _AppLocalizationsDelegate

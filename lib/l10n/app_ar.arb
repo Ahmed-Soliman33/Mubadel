@@ -31,11 +31,11 @@
   "confirm": "تأكيد",
   "save": "حفظ",
   "viewAll": "عرض الكل",
-  "ratingsCount": "({count} تقييم)",
+  "ratingsCount": "({num} تقييم)",
   "@ratingsCount": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "num": {
+        "type": "String"
       }
     }
   },
@@ -91,5 +91,81 @@
   "confirmPassword": "تأكيد كلمة المرور",
   "savePassword": "حفظ كلمة المرور",
   "backToLogin": "رجوع لتسجيل الدخول",
-  "splashLanguage": "English"
+  "splashLanguage": "English",
+  "searchHint": "بتدور على إيه النهارده؟",
+  "bannerText": "اللي مش محتاجه .. ممكن يكون كنز لحد تاني",
+  "bannerButton": "ابدأ التبديل",
+  "browseCategories": "تصفّح الأقسام",
+  "featured": "لقطات ممكن تعجبك",
+  "searchTitle": "بحث",
+  "filterCategory": "القسم",
+  "filterType": "النوع",
+  "filterCondition": "الحالة",
+  "filterAll": "الكل",
+  "filterSale": "بيع",
+  "filterSwap": "تبديل",
+  "productDetailsTitle": "تفاصيل المنتج",
+  "productDetailsSubtitle": "راجع التفاصيل قبل ما تبعت عرض",
+  "ownerSection": "صاحب المنتج",
+  "memberSince": "عضو من {year}",
+  "@memberSince": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "makeOffer": "اعرض تبديل",
+  "buy": "اشتري",
+  "messageSeller": "راسل البائع",
+  "edit": "تعديل",
+  "delete": "حذف",
+  "deleteConfirmTitle": "حذف المنتج",
+  "deleteConfirmBody": "متأكد إنك عايز تحذف المنتج ده؟",
+  "productUnavailable": "المنتج غير متاح حاليًا",
+  "offerSent": "تم إرسال عرضك",
+  "categoryLabel": "القسم",
+  "conditionLabel": "الحالة",
+  "addProductTitle": "أضف منتجك",
+  "addProductSubtitle": "خلّي حاجتك تلاقي استخدام جديد",
+  "editProductTitle": "تعديل المنتج",
+  "productImages": "صور المنتج",
+  "addImages": "أضف صور",
+  "photoTip": "صوّر المنتج في إضاءة كويسة",
+  "productData": "بيانات المنتج",
+  "productName": "اسم المنتج",
+  "productNameHint": "مثال: موبايل سامسونج A54",
+  "descriptionLabel": "الوصف",
+  "descriptionHint": "اكتب وصف المنتج وحالته",
+  "selectCategory": "اختر القسم",
+  "productCondition": "حالة المنتج",
+  "howToList": "عايز تعرضه إزاي؟",
+  "priceLabel": "السعر المطلوب (جنيه)",
+  "priceHint": "مثال: ٥٠٠",
+  "publish": "انشر المنتج",
+  "saveChanges": "حفظ التعديلات",
+  "errImagesRequired": "أضف صورة واحدة على الأقل",
+  "errCategoryRequired": "اختر القسم",
+  "errPriceRequired": "ادخل السعر",
+  "errConditionRequired": "اختر حالة المنتج",
+  "maxImages": "الحد الأقصى ٦ صور",
+  "coverLabel": "الغلاف",
+  "camera": "الكاميرا",
+  "gallery": "المعرض",
+  "productPublished": "تم نشر المنتج",
+  "productSaved": "تم حفظ التعديلات",
+  "productDeleted": "تم حذف المنتج",
+  "listingSaleShort": "للبيع",
+  "listingSwapShort": "للتبديل",
+  "favoritesTitle": "المفضلة",
+  "favoritesSubtitle": "المنتجات اللي حفظتها",
+  "noFavorites": "لسه مفيش حاجة في المفضلة",
+  "noFavoritesHint": "اضغط على القلب لحفظ المنتجات",
+  "noProducts": "مفيش منتجات",
+  "buyRequestTitle": "طلب شراء",
+  "cashOnDelivery": "الدفع عند الاستلام",
+  "noteOptional": "ملاحظة (اختياري)",
+  "noteHint": "اكتب ملاحظتك للبائع",
+  "sendBuyRequest": "إرسال طلب الشراء",
+  "buyRequestSent": "تم إرسال طلب الشراء"
 }

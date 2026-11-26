@@ -103,8 +103,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get viewAll => 'View all';
 
   @override
-  String ratingsCount(int count) {
-    return '($count reviews)';
+  String ratingsCount(String num) {
+    return '($num reviews)';
   }
 
   @override
@@ -247,4 +247,216 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get splashLanguage => 'العربية';
+
+  @override
+  String get searchHint => 'What are you looking for today?';
+
+  @override
+  String get bannerText =>
+      'What you don\'\'t need could be a treasure to someone else';
+
+  @override
+  String get bannerButton => 'Start swapping';
+
+  @override
+  String get browseCategories => 'Browse categories';
+
+  @override
+  String get featured => 'Picks you may like';
+
+  @override
+  String get searchTitle => 'Search';
+
+  @override
+  String get filterCategory => 'Category';
+
+  @override
+  String get filterType => 'Type';
+
+  @override
+  String get filterCondition => 'Condition';
+
+  @override
+  String get filterAll => 'All';
+
+  @override
+  String get filterSale => 'Sale';
+
+  @override
+  String get filterSwap => 'Swap';
+
+  @override
+  String get productDetailsTitle => 'Product details';
+
+  @override
+  String get productDetailsSubtitle =>
+      'Review the details before sending an offer';
+
+  @override
+  String get ownerSection => 'Product owner';
+
+  @override
+  String memberSince(String year) {
+    return 'Member since $year';
+  }
+
+  @override
+  String get makeOffer => 'Offer a swap';
+
+  @override
+  String get buy => 'Buy';
+
+  @override
+  String get messageSeller => 'Message seller';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get deleteConfirmTitle => 'Delete product';
+
+  @override
+  String get deleteConfirmBody =>
+      'Are you sure you want to delete this product?';
+
+  @override
+  String get productUnavailable => 'This product is currently unavailable';
+
+  @override
+  String get offerSent => 'Your offer was sent';
+
+  @override
+  String get categoryLabel => 'Category';
+
+  @override
+  String get conditionLabel => 'Condition';
+
+  @override
+  String get addProductTitle => 'Add your product';
+
+  @override
+  String get addProductSubtitle => 'Give your item a new life';
+
+  @override
+  String get editProductTitle => 'Edit product';
+
+  @override
+  String get productImages => 'Product photos';
+
+  @override
+  String get addImages => 'Add photos';
+
+  @override
+  String get photoTip => 'Shoot the product in good lighting';
+
+  @override
+  String get productData => 'Product details';
+
+  @override
+  String get productName => 'Product name';
+
+  @override
+  String get productNameHint => 'e.g. Samsung A54 phone';
+
+  @override
+  String get descriptionLabel => 'Description';
+
+  @override
+  String get descriptionHint => 'Describe the product and its condition';
+
+  @override
+  String get selectCategory => 'Select category';
+
+  @override
+  String get productCondition => 'Condition';
+
+  @override
+  String get howToList => 'How do you want to list it?';
+
+  @override
+  String get priceLabel => 'Asking price (EGP)';
+
+  @override
+  String get priceHint => 'e.g. 500';
+
+  @override
+  String get publish => 'Publish product';
+
+  @override
+  String get saveChanges => 'Save changes';
+
+  @override
+  String get errImagesRequired => 'Add at least one photo';
+
+  @override
+  String get errCategoryRequired => 'Select a category';
+
+  @override
+  String get errPriceRequired => 'Enter the price';
+
+  @override
+  String get errConditionRequired => 'Select the condition';
+
+  @override
+  String get maxImages => 'Maximum 6 photos';
+
+  @override
+  String get coverLabel => 'Cover';
+
+  @override
+  String get camera => 'Camera';
+
+  @override
+  String get gallery => 'Gallery';
+
+  @override
+  String get productPublished => 'Product published';
+
+  @override
+  String get productSaved => 'Changes saved';
+
+  @override
+  String get productDeleted => 'Product deleted';
+
+  @override
+  String get listingSaleShort => 'For sale';
+
+  @override
+  String get listingSwapShort => 'For swap';
+
+  @override
+  String get favoritesTitle => 'Favorites';
+
+  @override
+  String get favoritesSubtitle => 'Products you saved';
+
+  @override
+  String get noFavorites => 'Nothing in favorites yet';
+
+  @override
+  String get noFavoritesHint => 'Tap the heart to save products';
+
+  @override
+  String get noProducts => 'No products';
+
+  @override
+  String get buyRequestTitle => 'Buy request';
+
+  @override
+  String get cashOnDelivery => 'Cash on delivery';
+
+  @override
+  String get noteOptional => 'Note (optional)';
+
+  @override
+  String get noteHint => 'Write a note to the seller';
+
+  @override
+  String get sendBuyRequest => 'Send buy request';
+
+  @override
+  String get buyRequestSent => 'Buy request sent';
 }

@@ -31,11 +31,11 @@
   "confirm": "Confirm",
   "save": "Save",
   "viewAll": "View all",
-  "ratingsCount": "({count} reviews)",
+  "ratingsCount": "({num} reviews)",
   "@ratingsCount": {
     "placeholders": {
-      "count": {
-        "type": "int"
+      "num": {
+        "type": "String"
       }
     }
   },
@@ -91,5 +91,81 @@
   "confirmPassword": "Confirm password",
   "savePassword": "Save password",
   "backToLogin": "Back to login",
-  "splashLanguage": "العربية"
+  "splashLanguage": "العربية",
+  "searchHint": "What are you looking for today?",
+  "bannerText": "What you don''t need could be a treasure to someone else",
+  "bannerButton": "Start swapping",
+  "browseCategories": "Browse categories",
+  "featured": "Picks you may like",
+  "searchTitle": "Search",
+  "filterCategory": "Category",
+  "filterType": "Type",
+  "filterCondition": "Condition",
+  "filterAll": "All",
+  "filterSale": "Sale",
+  "filterSwap": "Swap",
+  "productDetailsTitle": "Product details",
+  "productDetailsSubtitle": "Review the details before sending an offer",
+  "ownerSection": "Product owner",
+  "memberSince": "Member since {year}",
+  "@memberSince": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "makeOffer": "Offer a swap",
+  "buy": "Buy",
+  "messageSeller": "Message seller",
+  "edit": "Edit",
+  "delete": "Delete",
+  "deleteConfirmTitle": "Delete product",
+  "deleteConfirmBody": "Are you sure you want to delete this product?",
+  "productUnavailable": "This product is currently unavailable",
+  "offerSent": "Your offer was sent",
+  "categoryLabel": "Category",
+  "conditionLabel": "Condition",
+  "addProductTitle": "Add your product",
+  "addProductSubtitle": "Give your item a new life",
+  "editProductTitle": "Edit product",
+  "productImages": "Product photos",
+  "addImages": "Add photos",
+  "photoTip": "Shoot the product in good lighting",
+  "productData": "Product details",
+  "productName": "Product name",
+  "productNameHint": "e.g. Samsung A54 phone",
+  "descriptionLabel": "Description",
+  "descriptionHint": "Describe the product and its condition",
+  "selectCategory": "Select category",
+  "productCondition": "Condition",
+  "howToList": "How do you want to list it?",
+  "priceLabel": "Asking price (EGP)",
+  "priceHint": "e.g. 500",
+  "publish": "Publish product",
+  "saveChanges": "Save changes",
+  "errImagesRequired": "Add at least one photo",
+  "errCategoryRequired": "Select a category",
+  "errPriceRequired": "Enter the price",
+  "errConditionRequired": "Select the condition",
+  "maxImages": "Maximum 6 photos",
+  "coverLabel": "Cover",
+  "camera": "Camera",
+  "gallery": "Gallery",
+  "productPublished": "Product published",
+  "productSaved": "Changes saved",
+  "productDeleted": "Product deleted",
+  "listingSaleShort": "For sale",
+  "listingSwapShort": "For swap",
+  "favoritesTitle": "Favorites",
+  "favoritesSubtitle": "Products you saved",
+  "noFavorites": "Nothing in favorites yet",
+  "noFavoritesHint": "Tap the heart to save products",
+  "noProducts": "No products",
+  "buyRequestTitle": "Buy request",
+  "cashOnDelivery": "Cash on delivery",
+  "noteOptional": "Note (optional)",
+  "noteHint": "Write a note to the seller",
+  "sendBuyRequest": "Send buy request",
+  "buyRequestSent": "Buy request sent"
 }

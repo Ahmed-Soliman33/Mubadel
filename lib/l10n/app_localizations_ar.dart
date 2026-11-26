@@ -103,8 +103,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get viewAll => 'عرض الكل';
 
   @override
-  String ratingsCount(int count) {
-    return '($count تقييم)';
+  String ratingsCount(String num) {
+    return '($num تقييم)';
   }
 
   @override
@@ -246,4 +246,213 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get splashLanguage => 'English';
+
+  @override
+  String get searchHint => 'بتدور على إيه النهارده؟';
+
+  @override
+  String get bannerText => 'اللي مش محتاجه .. ممكن يكون كنز لحد تاني';
+
+  @override
+  String get bannerButton => 'ابدأ التبديل';
+
+  @override
+  String get browseCategories => 'تصفّح الأقسام';
+
+  @override
+  String get featured => 'لقطات ممكن تعجبك';
+
+  @override
+  String get searchTitle => 'بحث';
+
+  @override
+  String get filterCategory => 'القسم';
+
+  @override
+  String get filterType => 'النوع';
+
+  @override
+  String get filterCondition => 'الحالة';
+
+  @override
+  String get filterAll => 'الكل';
+
+  @override
+  String get filterSale => 'بيع';
+
+  @override
+  String get filterSwap => 'تبديل';
+
+  @override
+  String get productDetailsTitle => 'تفاصيل المنتج';
+
+  @override
+  String get productDetailsSubtitle => 'راجع التفاصيل قبل ما تبعت عرض';
+
+  @override
+  String get ownerSection => 'صاحب المنتج';
+
+  @override
+  String memberSince(String year) {
+    return 'عضو من $year';
+  }
+
+  @override
+  String get makeOffer => 'اعرض تبديل';
+
+  @override
+  String get buy => 'اشتري';
+
+  @override
+  String get messageSeller => 'راسل البائع';
+
+  @override
+  String get edit => 'تعديل';
+
+  @override
+  String get delete => 'حذف';
+
+  @override
+  String get deleteConfirmTitle => 'حذف المنتج';
+
+  @override
+  String get deleteConfirmBody => 'متأكد إنك عايز تحذف المنتج ده؟';
+
+  @override
+  String get productUnavailable => 'المنتج غير متاح حاليًا';
+
+  @override
+  String get offerSent => 'تم إرسال عرضك';
+
+  @override
+  String get categoryLabel => 'القسم';
+
+  @override
+  String get conditionLabel => 'الحالة';
+
+  @override
+  String get addProductTitle => 'أضف منتجك';
+
+  @override
+  String get addProductSubtitle => 'خلّي حاجتك تلاقي استخدام جديد';
+
+  @override
+  String get editProductTitle => 'تعديل المنتج';
+
+  @override
+  String get productImages => 'صور المنتج';
+
+  @override
+  String get addImages => 'أضف صور';
+
+  @override
+  String get photoTip => 'صوّر المنتج في إضاءة كويسة';
+
+  @override
+  String get productData => 'بيانات المنتج';
+
+  @override
+  String get productName => 'اسم المنتج';
+
+  @override
+  String get productNameHint => 'مثال: موبايل سامسونج A54';
+
+  @override
+  String get descriptionLabel => 'الوصف';
+
+  @override
+  String get descriptionHint => 'اكتب وصف المنتج وحالته';
+
+  @override
+  String get selectCategory => 'اختر القسم';
+
+  @override
+  String get productCondition => 'حالة المنتج';
+
+  @override
+  String get howToList => 'عايز تعرضه إزاي؟';
+
+  @override
+  String get priceLabel => 'السعر المطلوب (جنيه)';
+
+  @override
+  String get priceHint => 'مثال: ٥٠٠';
+
+  @override
+  String get publish => 'انشر المنتج';
+
+  @override
+  String get saveChanges => 'حفظ التعديلات';
+
+  @override
+  String get errImagesRequired => 'أضف صورة واحدة على الأقل';
+
+  @override
+  String get errCategoryRequired => 'اختر القسم';
+
+  @override
+  String get errPriceRequired => 'ادخل السعر';
+
+  @override
+  String get errConditionRequired => 'اختر حالة المنتج';
+
+  @override
+  String get maxImages => 'الحد الأقصى ٦ صور';
+
+  @override
+  String get coverLabel => 'الغلاف';
+
+  @override
+  String get camera => 'الكاميرا';
+
+  @override
+  String get gallery => 'المعرض';
+
+  @override
+  String get productPublished => 'تم نشر المنتج';
+
+  @override
+  String get productSaved => 'تم حفظ التعديلات';
+
+  @override
+  String get productDeleted => 'تم حذف المنتج';
+
+  @override
+  String get listingSaleShort => 'للبيع';
+
+  @override
+  String get listingSwapShort => 'للتبديل';
+
+  @override
+  String get favoritesTitle => 'المفضلة';
+
+  @override
+  String get favoritesSubtitle => 'المنتجات اللي حفظتها';
+
+  @override
+  String get noFavorites => 'لسه مفيش حاجة في المفضلة';
+
+  @override
+  String get noFavoritesHint => 'اضغط على القلب لحفظ المنتجات';
+
+  @override
+  String get noProducts => 'مفيش منتجات';
+
+  @override
+  String get buyRequestTitle => 'طلب شراء';
+
+  @override
+  String get cashOnDelivery => 'الدفع عند الاستلام';
+
+  @override
+  String get noteOptional => 'ملاحظة (اختياري)';
+
+  @override
+  String get noteHint => 'اكتب ملاحظتك للبائع';
+
+  @override
+  String get sendBuyRequest => 'إرسال طلب الشراء';
+
+  @override
+  String get buyRequestSent => 'تم إرسال طلب الشراء';
 }

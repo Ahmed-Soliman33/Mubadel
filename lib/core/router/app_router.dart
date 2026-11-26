@@ -10,6 +10,11 @@ import '../../features/auth/presentation/forgot_password_screen.dart';
 import '../../features/auth/presentation/login_screen.dart';
 import '../../features/auth/presentation/signup_screen.dart';
 import '../../features/auth/presentation/splash_screen.dart';
+import '../../features/favorites/presentation/favorites_screen.dart';
+import '../../features/home/presentation/home_screen.dart';
+import '../../features/products/presentation/product_details_screen.dart';
+import '../../features/products/presentation/product_form_screen.dart';
+import '../../features/products/presentation/search_screen.dart';
 import '../widgets/placeholder_screen.dart';
 import 'main_shell.dart';
 
@@ -92,16 +97,14 @@ final routerProvider = Provider<GoRouter>((ref) {
         routes: [
           GoRoute(
               path: AppRoutes.home,
-              pageBuilder: (_, _) => const NoTransitionPage(
-                  child: PlaceholderScreen('home'))),
+              pageBuilder: (_, _) => const NoTransitionPage(child: HomeScreen())),
           GoRoute(
               path: AppRoutes.favorites,
-              pageBuilder: (_, _) => const NoTransitionPage(
-                  child: PlaceholderScreen('favorites'))),
+              pageBuilder: (_, _) => const NoTransitionPage(child: FavoritesScreen())),
           GoRoute(
               path: AppRoutes.add,
               pageBuilder: (_, _) =>
-                  const NoTransitionPage(child: PlaceholderScreen('add'))),
+                  const NoTransitionPage(child: ProductFormScreen())),
           GoRoute(
               path: AppRoutes.messages,
               pageBuilder: (_, _) => const NoTransitionPage(
@@ -114,11 +117,13 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/product/:id',
-        builder: (_, s) => PlaceholderScreen('product ${s.pathParameters['id']}'),
+        builder: (_, s) =>
+            ProductDetailsScreen(productId: s.pathParameters['id']!),
         routes: [
           GoRoute(
               path: 'edit',
-              builder: (_, s) => PlaceholderScreen('edit')),
+              builder: (_, s) =>
+                  ProductEditScreen(productId: s.pathParameters['id']!)),
           GoRoute(
               path: 'offer',
               builder: (_, s) => PlaceholderScreen('offer')),
@@ -126,8 +131,8 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
           path: AppRoutes.search,
-          builder: (_, s) => PlaceholderScreen(
-              'search ${s.uri.queryParameters['category'] ?? ''}')),
+          builder: (_, s) => SearchScreen(
+              categoryId: int.tryParse(s.uri.queryParameters['category'] ?? ''))),
       GoRoute(
           path: '/user/:id',
           builder: (_, s) => PlaceholderScreen('user')),
